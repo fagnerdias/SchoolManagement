@@ -1,0 +1,264 @@
+<Machine name='StudentMch' type='abstraction'>
+<Sees>
+<Attr>
+<Pos l='6' c='1' s='4'/>
+</Attr>
+<Referenced_Machine>
+<Attr>
+<Pos l='6' c='6' s='10'/>
+</Attr>
+<Name>SubjectMch</Name>
+</Referenced_Machine>
+<Referenced_Machine>
+<Attr>
+<Pos l='6' c='18' s='11'/>
+</Attr>
+<Name>Student_ctx</Name>
+</Referenced_Machine>
+<Referenced_Machine>
+<Attr>
+<Pos l='6' c='31' s='9'/>
+</Attr>
+<Name>CareerMch</Name>
+</Referenced_Machine>
+</Sees>
+<Abstract_Variables>
+<Attr>
+<Pos l='7' c='1' s='18'/>
+</Attr>
+<Id value='aprovedSubjects' typref='683629755'>
+<Attr>
+<Pos l='7' c='11' s='15'/>
+</Attr>
+</Id>
+</Abstract_Variables>
+<Invariant>
+<Attr>
+<Pos l='8' c='1' s='9'/>
+</Attr>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='8' c='27' s='1'/>
+</Attr>
+<Id value='aprovedSubjects' typref='683629755'>
+<Attr>
+<Pos l='8' c='11' s='15'/>
+</Attr>
+</Id>
+<Binary_Exp op='&lt;-&gt;' typref='2644162056'>
+<Attr>
+<Pos l='8' c='35' s='3'/>
+</Attr>
+<Id value='STUDENT' typref='1662888534'>
+<Attr>
+<Pos l='8' c='28' s='7'/>
+</Attr>
+</Id>
+<Id value='SUBJECT' typref='432315463'>
+<Attr>
+<Pos l='8' c='39' s='7'/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Invariant>
+<Initialisation>
+<Attr>
+<Pos l='9' c='1' s='14'/>
+</Attr>
+<Assignement_Sub>
+<Attr>
+<Pos l='9' c='33' s='2'/>
+</Attr>
+<Variables>
+<Id value='aprovedSubjects' typref='683629755'>
+<Attr>
+<Pos l='9' c='17' s='15'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref='3817003670'>
+<Attr>
+<Pos l='9' c='36' s='2'/>
+</Attr>
+</EmptySet>
+</Values>
+</Assignement_Sub>
+</Initialisation>
+<Operations>
+<Operation name='addaprovedSubjects'>
+<Attr>
+<Pos l='11' c='5' s='18' endLine='14'/>
+</Attr>
+<Input_Parameters>
+<Id value='aa' typref='3790660461'>
+<Attr>
+<Pos l='11' c='24' s='2'/>
+</Attr>
+</Id>
+<Id value='mm' typref='3029594684'>
+<Attr>
+<Pos l='11' c='28' s='2'/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Precondition>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='12' c='15' s='1'/>
+</Attr>
+<Id value='aa' typref='3790660461'>
+<Attr>
+<Pos l='12' c='13' s='2'/>
+</Attr>
+</Id>
+<Id value='STUDENT' typref='1662888534'>
+<Attr>
+<Pos l='12' c='17' s='7'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='12' c='29' s='1'/>
+</Attr>
+<Id value='mm' typref='3029594684'>
+<Attr>
+<Pos l='12' c='27' s='2'/>
+</Attr>
+</Id>
+<Id value='SUBJECT' typref='432315463'>
+<Attr>
+<Pos l='12' c='30' s='7'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='12' c='42' s='1'/>
+</Attr>
+<Id value='aa' typref='3790660461'>
+<Attr>
+<Pos l='12' c='40' s='2'/>
+</Attr>
+</Id>
+<Unary_Exp op='dom' typref='1662888534'>
+<Attr>
+<Pos l='12' c='44' s='3'/>
+</Attr>
+<Id value='enrolledStudents' typref='3015466747'>
+<Attr>
+<Pos l='12' c='48' s='16'/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Precondition>
+<Body>
+<Assignement_Sub>
+<Attr>
+<Pos l='13' c='30' s='2'/>
+</Attr>
+<Variables>
+<Id value='aprovedSubjects' typref='683629755'>
+<Attr>
+<Pos l='13' c='14' s='15'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op='\/' typref='683629755'>
+<Attr>
+<Pos l='13' c='49' s='2'/>
+</Attr>
+<Id value='aprovedSubjects' typref='683629755'>
+<Attr>
+<Pos l='13' c='33' s='15'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='683629755'>
+<Attr>
+<Pos l='13' c='52' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='1849840328'>
+<Attr>
+<Pos l='13' c='56' s='3'/>
+</Attr>
+<Id value='aa' typref='3790660461'>
+<Attr>
+<Pos l='13' c='53' s='2'/>
+</Attr>
+</Id>
+<Id value='mm' typref='3029594684'>
+<Attr>
+<Pos l='13' c='60' s='2'/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Assignement_Sub>
+</Body>
+</Operation>
+</Operations>
+<TypeInfos>
+<Type id='683629755'>
+<Unary_Exp op='POW'>
+<Binary_Exp op='*'>
+<Id value='STUDENT'/>
+<Id value='SUBJECT'/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='2644162056'>
+<Unary_Exp op='POW'>
+<Unary_Exp op='POW'>
+<Binary_Exp op='*'>
+<Id value='STUDENT'/>
+<Id value='SUBJECT'/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='1662888534'>
+<Unary_Exp op='POW'>
+<Id value='STUDENT'/>
+</Unary_Exp>
+</Type>
+<Type id='432315463'>
+<Unary_Exp op='POW'>
+<Id value='SUBJECT'/>
+</Unary_Exp>
+</Type>
+<Type id='3817003670'>
+<Unary_Exp op='POW'>
+<Generic_Type/>
+</Unary_Exp>
+</Type>
+<Type id='3790660461'>
+<Id value='STUDENT'/>
+</Type>
+<Type id='3029594684'>
+<Id value='SUBJECT'/>
+</Type>
+<Type id='3015466747'>
+<Unary_Exp op='POW'>
+<Binary_Exp op='*'>
+<Id value='STUDENT'/>
+<Id value='CAREER'/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='1849840328'>
+<Binary_Exp op='*'>
+<Id value='STUDENT'/>
+<Id value='SUBJECT'/>
+</Binary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>

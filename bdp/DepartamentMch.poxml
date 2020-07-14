@@ -1,0 +1,3927 @@
+<Proof_Obligations>
+<Define name="B definitions">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="NAT"/>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT"/>
+<Binary_Exp op="..">
+<Id value="MININT"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ctx">
+<Attr>
+<Pos s="4" l="6" c="1"/>
+</Attr>
+<Set>
+<Id value="CAREER" tag="D:/B projects/SchoolManagement/bdp\Career_ctx.bxml:1:1:1:1" typref="4290625779">
+<Attr>
+<Pos s="6" l="6" c="6"/>
+</Attr>
+</Id>
+</Set>
+<Attr>
+<Pos s="4" l="6" c="1"/>
+</Attr>
+<Set>
+<Id value="PROFESSOR" tag="D:/B projects/SchoolManagement/bdp\ProfessorMch.bxml:1:1:1:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="6" c="6"/>
+</Attr>
+</Id>
+</Set>
+<Attr>
+<Pos s="4" l="6" c="1"/>
+</Attr>
+<Set>
+<Id value="DEPARTAMENT" tag="D:/B projects/SchoolManagement/bdp\Departament_ctx.bxml:1:1:1:1" typref="2083231366">
+<Attr>
+<Pos s="11" l="6" c="6"/>
+</Attr>
+</Id>
+</Set>
+</Define>
+<Define name="seext"/>
+<Define name="lprp"/>
+<Define name="inprp"/>
+<Define name="inext"/>
+<Define name="inv">
+<Attr>
+<Pos s="9" l="8" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((coordination) : (((PROFESSOR) +-&gt; (CAREER))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="24"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="8" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="1553777810">
+<Attr>
+<Pos s="3" l="8" c="36"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="26"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="8" c="40"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((members) : (((PROFESSOR) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="57"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="8" c="49"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2028581397">
+<Attr>
+<Pos s="3" l="8" c="69"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="59"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="8" c="73"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((career) : (((CAREER) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="9" c="33"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="9" c="27"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2108146036">
+<Attr>
+<Pos s="3" l="9" c="42"/>
+</Attr>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:1" typref="4290625779">
+<Attr>
+<Pos s="6" l="9" c="35"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="9" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(dom(coordination)) &lt;= 2)" op="&lt;=">
+<Attr>
+<Pos s="2" l="9" c="84"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="60"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="65"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="69"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="2" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="87"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(0 &lt;= card(dom(coordination)))" op="&gt;=">
+<Attr>
+<Pos s="2" l="9" c="115"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="91"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="96"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="100"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="0" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="118"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ass"/>
+<Define name="cst"/>
+<Proof_Obligation>
+<Comment>Initialisation dans une machine abstraite</Comment>
+<Tag>Initialisation</Tag>
+<Tag>Invariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Attr>
+<Pos s="14" l="10" c="1"/>
+</Attr>
+<Nary_Sub op="||">
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:4:1:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="10" c="16"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:4:1:1:2:1" typref="3817003670">
+<Attr>
+<Pos s="12" l="10" c="16"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:4:1:2:1:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="10" c="38"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:4:1:2:2:1" typref="3817003670">
+<Attr>
+<Pos s="7" l="10" c="38"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:4:1:3:1:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="10" c="55"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:4:1:3:2:1" typref="3817003670">
+<Attr>
+<Pos s="6" l="10" c="55"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+</Nary_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos s="9" l="8" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((coordination) : (((PROFESSOR) +-&gt; (CAREER))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="24"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="8" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="1553777810">
+<Attr>
+<Pos s="3" l="8" c="36"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="26"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="8" c="40"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((members) : (((PROFESSOR) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="57"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="8" c="49"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2028581397">
+<Attr>
+<Pos s="3" l="8" c="69"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="59"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="8" c="73"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((career) : (((CAREER) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="9" c="33"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="9" c="27"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2108146036">
+<Attr>
+<Pos s="3" l="9" c="42"/>
+</Attr>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:1" typref="4290625779">
+<Attr>
+<Pos s="6" l="9" c="35"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="9" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(dom(coordination)) &lt;= 2)" op="&lt;=">
+<Attr>
+<Pos s="2" l="9" c="84"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="60"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="65"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="69"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="2" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="87"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(0 &lt;= card(dom(coordination)))" op="&gt;=">
+<Attr>
+<Pos s="2" l="9" c="115"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="91"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="96"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="100"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="0" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="118"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>addProfessorMember</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="13" c="15"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="13" c="13"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:1:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="13" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="13" c="30"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:2:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="13" c="28"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="13" c="31"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="/:">
+<Attr>
+<Pos s="2" l="13" c="48"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:3:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="13" c="45"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="13" c="51"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:3:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="13" c="55"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:3:1:1:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="14" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op="\/" typref="1103259374">
+<Attr>
+<Pos s="7" l="14" c="14"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:3:1:2:1:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="14" c="25"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="1103259374">
+<Attr>
+<Pos s="1" l="14" c="36"/>
+</Attr>
+<Binary_Exp op="|-&gt;" typref="495022933">
+<Attr>
+<Pos s="3" l="14" c="40"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:3:1:2:1:2:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="14" c="37"/>
+</Attr>
+</Id>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:3:1:2:1:2:1:2" typref="1900676669">
+<Attr>
+<Pos s="2" l="14" c="44"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos s="9" l="8" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((coordination) : (((PROFESSOR) +-&gt; (CAREER))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="24"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="8" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="1553777810">
+<Attr>
+<Pos s="3" l="8" c="36"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="26"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="8" c="40"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((members) : (((PROFESSOR) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="57"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="8" c="49"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2028581397">
+<Attr>
+<Pos s="3" l="8" c="69"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="59"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="8" c="73"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((career) : (((CAREER) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="9" c="33"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="9" c="27"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2108146036">
+<Attr>
+<Pos s="3" l="9" c="42"/>
+</Attr>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:1" typref="4290625779">
+<Attr>
+<Pos s="6" l="9" c="35"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="9" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(dom(coordination)) &lt;= 2)" op="&lt;=">
+<Attr>
+<Pos s="2" l="9" c="84"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="60"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="65"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="69"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="2" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="87"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(0 &lt;= card(dom(coordination)))" op="&gt;=">
+<Attr>
+<Pos s="2" l="9" c="115"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="91"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="96"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="100"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="0" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="118"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>removeProfessorMember</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="18" c="15"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="18" c="13"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:1:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="18" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="18" c="30"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:2:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="18" c="28"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="18" c="31"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="18" c="48"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:3:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="18" c="45"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="18" c="50"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:3:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="18" c="54"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="18" c="67"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:4:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="18" c="65"/>
+</Attr>
+</Id>
+<Unary_Exp op="ran" typref="2083231366">
+<Attr>
+<Pos s="3" l="18" c="68"/>
+</Attr>
+<Binary_Exp op="&lt;|" typref="1103259374">
+<Attr>
+<Pos s="2" l="18" c="77"/>
+</Attr>
+<Nary_Exp op="{" typref="1711505738">
+<Attr>
+<Pos s="1" l="18" c="72"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:4:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="18" c="73"/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:4:2:1:2" typref="1103259374">
+<Attr>
+<Pos s="7" l="18" c="80"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:3:1:1:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="19" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op="-" typref="1103259374">
+<Attr>
+<Pos s="7" l="19" c="14"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:3:1:2:1:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="19" c="25"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="1103259374">
+<Attr>
+<Pos s="1" l="19" c="35"/>
+</Attr>
+<Binary_Exp op="|-&gt;" typref="495022933">
+<Attr>
+<Pos s="3" l="19" c="39"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:3:1:2:1:2:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="19" c="36"/>
+</Attr>
+</Id>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:3:1:2:1:2:1:2" typref="1900676669">
+<Attr>
+<Pos s="2" l="19" c="43"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos s="9" l="8" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((coordination) : (((PROFESSOR) +-&gt; (CAREER))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="24"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="8" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="1553777810">
+<Attr>
+<Pos s="3" l="8" c="36"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="26"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="8" c="40"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((members) : (((PROFESSOR) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="57"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="8" c="49"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2028581397">
+<Attr>
+<Pos s="3" l="8" c="69"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="59"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="8" c="73"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((career) : (((CAREER) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="9" c="33"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="9" c="27"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2108146036">
+<Attr>
+<Pos s="3" l="9" c="42"/>
+</Attr>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:1" typref="4290625779">
+<Attr>
+<Pos s="6" l="9" c="35"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="9" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(dom(coordination)) &lt;= 2)" op="&lt;=">
+<Attr>
+<Pos s="2" l="9" c="84"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="60"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="65"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="69"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="2" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="87"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(0 &lt;= card(dom(coordination)))" op="&gt;=">
+<Attr>
+<Pos s="2" l="9" c="115"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="91"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="96"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="100"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="0" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="118"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>addCareerDepartament</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="23" c="15"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:1:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="23" c="13"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:1:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="23" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="23" c="32"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:2:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="23" c="30"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="23" c="33"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="/:">
+<Attr>
+<Pos s="2" l="23" c="45"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:3:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="23" c="42"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="4290625779">
+<Attr>
+<Pos s="3" l="23" c="48"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:3:2:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="23" c="52"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:3:1:1:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="24" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op="\/" typref="1586195109">
+<Attr>
+<Pos s="6" l="24" c="14"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:3:1:2:1:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="24" c="24"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="1586195109">
+<Attr>
+<Pos s="1" l="24" c="34"/>
+</Attr>
+<Binary_Exp op="|-&gt;" typref="2180358068">
+<Attr>
+<Pos s="3" l="24" c="38"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:3:1:2:1:2:1:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="24" c="35"/>
+</Attr>
+</Id>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:3:1:2:1:2:1:2" typref="1900676669">
+<Attr>
+<Pos s="2" l="24" c="42"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos s="9" l="8" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((coordination) : (((PROFESSOR) +-&gt; (CAREER))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="24"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="8" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="1553777810">
+<Attr>
+<Pos s="3" l="8" c="36"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="26"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="8" c="40"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((members) : (((PROFESSOR) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="57"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="8" c="49"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2028581397">
+<Attr>
+<Pos s="3" l="8" c="69"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="59"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="8" c="73"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((career) : (((CAREER) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="9" c="33"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="9" c="27"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2108146036">
+<Attr>
+<Pos s="3" l="9" c="42"/>
+</Attr>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:1" typref="4290625779">
+<Attr>
+<Pos s="6" l="9" c="35"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="9" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(dom(coordination)) &lt;= 2)" op="&lt;=">
+<Attr>
+<Pos s="2" l="9" c="84"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="60"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="65"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="69"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="2" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="87"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(0 &lt;= card(dom(coordination)))" op="&gt;=">
+<Attr>
+<Pos s="2" l="9" c="115"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="91"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="96"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="100"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="0" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="118"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>removeCareerDepartament</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="15"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:1:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="28" c="13"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:1:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="28" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="32"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:2:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="28" c="30"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="28" c="33"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="45"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:3:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="28" c="42"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="4290625779">
+<Attr>
+<Pos s="3" l="28" c="47"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:3:2:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="28" c="51"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="63"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:4:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="28" c="61"/>
+</Attr>
+</Id>
+<Unary_Exp op="ran" typref="2083231366">
+<Attr>
+<Pos s="3" l="28" c="64"/>
+</Attr>
+<Binary_Exp op="&lt;|" typref="1586195109">
+<Attr>
+<Pos s="2" l="28" c="73"/>
+</Attr>
+<Nary_Exp op="{" typref="4290625779">
+<Attr>
+<Pos s="1" l="28" c="68"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:4:2:1:1:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="28" c="69"/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:4:2:1:2" typref="1586195109">
+<Attr>
+<Pos s="6" l="28" c="76"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:3:1:1:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="29" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op="-" typref="1586195109">
+<Attr>
+<Pos s="6" l="29" c="14"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:3:1:2:1:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="29" c="24"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="1586195109">
+<Attr>
+<Pos s="1" l="29" c="33"/>
+</Attr>
+<Binary_Exp op="|-&gt;" typref="2180358068">
+<Attr>
+<Pos s="3" l="29" c="37"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:3:1:2:1:2:1:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="29" c="34"/>
+</Attr>
+</Id>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:3:1:2:1:2:1:2" typref="1900676669">
+<Attr>
+<Pos s="2" l="29" c="41"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos s="9" l="8" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((coordination) : (((PROFESSOR) +-&gt; (CAREER))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="24"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="8" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="1553777810">
+<Attr>
+<Pos s="3" l="8" c="36"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="26"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="8" c="40"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((members) : (((PROFESSOR) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="57"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="8" c="49"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2028581397">
+<Attr>
+<Pos s="3" l="8" c="69"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="59"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="8" c="73"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((career) : (((CAREER) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="9" c="33"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="9" c="27"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2108146036">
+<Attr>
+<Pos s="3" l="9" c="42"/>
+</Attr>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:1" typref="4290625779">
+<Attr>
+<Pos s="6" l="9" c="35"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="9" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(dom(coordination)) &lt;= 2)" op="&lt;=">
+<Attr>
+<Pos s="2" l="9" c="84"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="60"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="65"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="69"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="2" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="87"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(0 &lt;= card(dom(coordination)))" op="&gt;=">
+<Attr>
+<Pos s="2" l="9" c="115"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="91"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="96"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="100"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="0" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="118"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>addCoordenador</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="15"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="13"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:1:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="33" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="30"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:2:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="33" c="28"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="33" c="31"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="43"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:3:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="40"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="33" c="45"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:3:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="33" c="49"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="/:">
+<Attr>
+<Pos s="2" l="33" c="62"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:4:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="60"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="33" c="64"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:4:2:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="33" c="68"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="33" c="104"/>
+</Attr>
+<Unary_Exp op="ran" typref="2083231366">
+<Attr>
+<Pos s="3" l="33" c="84"/>
+</Attr>
+<Binary_Exp op="&lt;|" typref="1586195109">
+<Attr>
+<Pos s="2" l="33" c="93"/>
+</Attr>
+<Nary_Exp op="{" typref="4290625779">
+<Attr>
+<Pos s="1" l="33" c="88"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:1:1:1:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="33" c="89"/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:1:1:2" typref="1586195109">
+<Attr>
+<Pos s="6" l="33" c="96"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Unary_Exp>
+<Unary_Exp op="ran" typref="2083231366">
+<Attr>
+<Pos s="3" l="33" c="106"/>
+</Attr>
+<Binary_Exp op="&lt;|" typref="1103259374">
+<Attr>
+<Pos s="2" l="33" c="115"/>
+</Attr>
+<Nary_Exp op="{" typref="1711505738">
+<Attr>
+<Pos s="1" l="33" c="110"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="111"/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:2:1:2" typref="1103259374">
+<Attr>
+<Pos s="7" l="33" c="118"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="33" c="153"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="33" c="129"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="33" c="134"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:6:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="33" c="138"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="2" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:6:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="33" c="155"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:3:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="34" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op="\/" typref="2480913287">
+<Attr>
+<Pos s="12" l="34" c="14"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:3:1:2:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="34" c="30"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="2480913287">
+<Attr>
+<Pos s="1" l="34" c="46"/>
+</Attr>
+<Binary_Exp op="|-&gt;" typref="3418219986">
+<Attr>
+<Pos s="3" l="34" c="50"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:3:1:2:1:2:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="34" c="47"/>
+</Attr>
+</Id>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:3:1:2:1:2:1:2" typref="3102896358">
+<Attr>
+<Pos s="2" l="34" c="54"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos s="9" l="8" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((coordination) : (((PROFESSOR) +-&gt; (CAREER))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="24"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="8" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="1553777810">
+<Attr>
+<Pos s="3" l="8" c="36"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="26"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="8" c="40"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((members) : (((PROFESSOR) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="57"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="8" c="49"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2028581397">
+<Attr>
+<Pos s="3" l="8" c="69"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="59"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="8" c="73"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((career) : (((CAREER) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="9" c="33"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="9" c="27"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2108146036">
+<Attr>
+<Pos s="3" l="9" c="42"/>
+</Attr>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:1" typref="4290625779">
+<Attr>
+<Pos s="6" l="9" c="35"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="9" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(dom(coordination)) &lt;= 2)" op="&lt;=">
+<Attr>
+<Pos s="2" l="9" c="84"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="60"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="65"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="69"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="2" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="87"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(0 &lt;= card(dom(coordination)))" op="&gt;=">
+<Attr>
+<Pos s="2" l="9" c="115"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="91"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="96"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="100"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="0" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="118"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>removeCoordination</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="15"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:1:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="38" c="13"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:1:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="38" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="27"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:2:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="38" c="25"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:2:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="38" c="28"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="42"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:3:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="38" c="40"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="4290625779">
+<Attr>
+<Pos s="3" l="38" c="43"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:3:2:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="38" c="47"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="59"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:4:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="38" c="57"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="38" c="60"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:4:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="38" c="64"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&gt;">
+<Attr>
+<Pos s="1" l="38" c="99"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="38" c="75"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="38" c="80"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="38" c="84"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="0" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:5:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="38" c="101"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Sub_Calculus>
+<Simple_Assignement_Sub>
+<Variables>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:3:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="39" c="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op="-" typref="2480913287">
+<Attr>
+<Pos s="12" l="39" c="14"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:3:1:2:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="39" c="30"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="2480913287">
+<Attr>
+<Pos s="1" l="39" c="45"/>
+</Attr>
+<Binary_Exp op="|-&gt;" typref="3418219986">
+<Attr>
+<Pos s="3" l="39" c="49"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:3:1:2:1:2:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="39" c="46"/>
+</Attr>
+</Id>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:3:1:2:1:2:1:2" typref="3102896358">
+<Attr>
+<Pos s="2" l="39" c="53"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Simple_Assignement_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;"/>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos s="9" l="8" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((coordination) : (((PROFESSOR) +-&gt; (CAREER))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="24"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="8" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="1553777810">
+<Attr>
+<Pos s="3" l="8" c="36"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="26"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="8" c="40"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((members) : (((PROFESSOR) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="57"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="8" c="49"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2028581397">
+<Attr>
+<Pos s="3" l="8" c="69"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="59"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="8" c="73"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((career) : (((CAREER) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="9" c="33"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="9" c="27"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2108146036">
+<Attr>
+<Pos s="3" l="9" c="42"/>
+</Attr>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:1" typref="4290625779">
+<Attr>
+<Pos s="6" l="9" c="35"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="9" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(card(dom(coordination)) &lt;= 2)" op="&lt;=">
+<Attr>
+<Pos s="2" l="9" c="84"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="60"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="65"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="69"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="2" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="87"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison initialTag="(0 &lt;= card(dom(coordination)))" op="&gt;=">
+<Attr>
+<Pos s="2" l="9" c="115"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="91"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="96"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="100"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="0" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="118"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessConstraints</Tag>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;"/>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessProperties</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Hypothesis/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;"/>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison initialTag="((coordination) : (((PROFESSOR) +-&gt; (CAREER))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="24"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="8" c="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="1553777810">
+<Attr>
+<Pos s="3" l="8" c="36"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="26"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="8" c="40"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison initialTag="((members) : (((PROFESSOR) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="8" c="57"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="8" c="49"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2028581397">
+<Attr>
+<Pos s="3" l="8" c="69"/>
+</Attr>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:1" typref="1711505738">
+<Attr>
+<Pos s="9" l="8" c="59"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:2:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="8" c="73"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison initialTag="((career) : (((CAREER) +-&gt; (DEPARTAMENT))))" op=":">
+<Attr>
+<Pos s="1" l="9" c="33"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="9" c="27"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2108146036">
+<Attr>
+<Pos s="3" l="9" c="42"/>
+</Attr>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:1" typref="4290625779">
+<Attr>
+<Pos s="6" l="9" c="35"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:3:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="9" c="46"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="65"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="69"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="FIN">
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="65"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="69"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison initialTag="(card(dom(coordination)) &lt;= 2)" op="&lt;=">
+<Attr>
+<Pos s="2" l="9" c="84"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="9" c="60"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="65"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="69"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="2" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:4:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="9" c="87"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="96"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="100"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="FIN">
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="9" c="96"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:3:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="9" c="100"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInitialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_addProfessorMember</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="13" c="15"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="13" c="13"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:1:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="13" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="13" c="30"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:2:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="13" c="28"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="13" c="31"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_addProfessorMember</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="13" c="15"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="13" c="13"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:1:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="13" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="13" c="30"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:2:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="13" c="28"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="13" c="31"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="/:">
+<Attr>
+<Pos s="2" l="13" c="48"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:3:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="13" c="45"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="13" c="51"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:1:2:1:3:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="13" c="55"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_removeProfessorMember</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="18" c="15"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="18" c="13"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:1:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="18" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="18" c="30"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:2:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="18" c="28"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="18" c="31"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="18" c="48"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:3:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="18" c="45"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="18" c="50"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:3:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="18" c="54"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_removeProfessorMember</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="18" c="15"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="18" c="13"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:1:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="18" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="18" c="30"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:2:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="18" c="28"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:2:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="18" c="31"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="18" c="48"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:3:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="18" c="45"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="18" c="50"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:3:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="18" c="54"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="18" c="67"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:4:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="18" c="65"/>
+</Attr>
+</Id>
+<Unary_Exp op="ran" typref="2083231366">
+<Attr>
+<Pos s="3" l="18" c="68"/>
+</Attr>
+<Binary_Exp op="&lt;|" typref="1103259374">
+<Attr>
+<Pos s="2" l="18" c="77"/>
+</Attr>
+<Nary_Exp op="{" typref="1711505738">
+<Attr>
+<Pos s="1" l="18" c="72"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:4:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="18" c="73"/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:2:2:1:4:2:1:2" typref="1103259374">
+<Attr>
+<Pos s="7" l="18" c="80"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_addCareerDepartament</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="23" c="15"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:1:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="23" c="13"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:1:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="23" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="23" c="32"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:2:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="23" c="30"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="23" c="33"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_addCareerDepartament</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="23" c="15"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:1:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="23" c="13"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:1:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="23" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="23" c="32"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:2:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="23" c="30"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="23" c="33"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="/:">
+<Attr>
+<Pos s="2" l="23" c="45"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:3:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="23" c="42"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="4290625779">
+<Attr>
+<Pos s="3" l="23" c="48"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:3:2:1:3:2:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="23" c="52"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_removeCareerDepartament</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="15"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:1:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="28" c="13"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:1:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="28" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="32"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:2:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="28" c="30"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="28" c="33"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="45"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:3:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="28" c="42"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="4290625779">
+<Attr>
+<Pos s="3" l="28" c="47"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:3:2:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="28" c="51"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_removeCareerDepartament</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="15"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:1:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="28" c="13"/>
+</Attr>
+</Id>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:1:2" typref="2083231366">
+<Attr>
+<Pos s="11" l="28" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="32"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:2:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="28" c="30"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="28" c="33"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="45"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:3:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="28" c="42"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="4290625779">
+<Attr>
+<Pos s="3" l="28" c="47"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:3:2:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="28" c="51"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="63"/>
+</Attr>
+<Id value="dd" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:4:1" typref="1900676669">
+<Attr>
+<Pos s="2" l="28" c="61"/>
+</Attr>
+</Id>
+<Unary_Exp op="ran" typref="2083231366">
+<Attr>
+<Pos s="3" l="28" c="64"/>
+</Attr>
+<Binary_Exp op="&lt;|" typref="1586195109">
+<Attr>
+<Pos s="2" l="28" c="73"/>
+</Attr>
+<Nary_Exp op="{" typref="4290625779">
+<Attr>
+<Pos s="1" l="28" c="68"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:4:2:1:1:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="28" c="69"/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:4:2:1:4:2:1:2" typref="1586195109">
+<Attr>
+<Pos s="6" l="28" c="76"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_addCoordenador</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="15"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="13"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:1:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="33" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="30"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:2:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="33" c="28"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="33" c="31"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="43"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:3:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="40"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="33" c="45"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:3:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="33" c="49"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="/:">
+<Attr>
+<Pos s="2" l="33" c="62"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:4:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="60"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="33" c="64"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:4:2:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="33" c="68"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="33" c="104"/>
+</Attr>
+<Unary_Exp op="ran" typref="2083231366">
+<Attr>
+<Pos s="3" l="33" c="84"/>
+</Attr>
+<Binary_Exp op="&lt;|" typref="1586195109">
+<Attr>
+<Pos s="2" l="33" c="93"/>
+</Attr>
+<Nary_Exp op="{" typref="4290625779">
+<Attr>
+<Pos s="1" l="33" c="88"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:1:1:1:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="33" c="89"/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:1:1:2" typref="1586195109">
+<Attr>
+<Pos s="6" l="33" c="96"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Unary_Exp>
+<Unary_Exp op="ran" typref="2083231366">
+<Attr>
+<Pos s="3" l="33" c="106"/>
+</Attr>
+<Binary_Exp op="&lt;|" typref="1103259374">
+<Attr>
+<Pos s="2" l="33" c="115"/>
+</Attr>
+<Nary_Exp op="{" typref="1711505738">
+<Attr>
+<Pos s="1" l="33" c="110"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="111"/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:2:1:2" typref="1103259374">
+<Attr>
+<Pos s="7" l="33" c="118"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="33" c="134"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:6:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="33" c="138"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="FIN">
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="33" c="134"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:6:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="33" c="138"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_addCoordenador</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="15"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="13"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:1:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="33" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="30"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:2:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="33" c="28"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:2:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="33" c="31"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="43"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:3:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="40"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="33" c="45"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:3:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="33" c="49"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="/:">
+<Attr>
+<Pos s="2" l="33" c="62"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:4:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="60"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="33" c="64"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:4:2:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="33" c="68"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="33" c="104"/>
+</Attr>
+<Unary_Exp op="ran" typref="2083231366">
+<Attr>
+<Pos s="3" l="33" c="84"/>
+</Attr>
+<Binary_Exp op="&lt;|" typref="1586195109">
+<Attr>
+<Pos s="2" l="33" c="93"/>
+</Attr>
+<Nary_Exp op="{" typref="4290625779">
+<Attr>
+<Pos s="1" l="33" c="88"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:1:1:1:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="33" c="89"/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:1:1:2" typref="1586195109">
+<Attr>
+<Pos s="6" l="33" c="96"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Unary_Exp>
+<Unary_Exp op="ran" typref="2083231366">
+<Attr>
+<Pos s="3" l="33" c="106"/>
+</Attr>
+<Binary_Exp op="&lt;|" typref="1103259374">
+<Attr>
+<Pos s="2" l="33" c="115"/>
+</Attr>
+<Nary_Exp op="{" typref="1711505738">
+<Attr>
+<Pos s="1" l="33" c="110"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:2:1:1:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="33" c="111"/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:5:2:1:2" typref="1103259374">
+<Attr>
+<Pos s="7" l="33" c="118"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="33" c="153"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="33" c="129"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="33" c="134"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:6:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="33" c="138"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="2" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:5:2:1:6:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="33" c="155"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_Precondition_removeCoordination</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="15"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:1:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="38" c="13"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:1:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="38" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="27"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:2:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="38" c="25"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:2:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="38" c="28"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="42"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:3:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="38" c="40"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="4290625779">
+<Attr>
+<Pos s="3" l="38" c="43"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:3:2:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="38" c="47"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="59"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:4:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="38" c="57"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="38" c="60"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:4:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="38" c="64"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="38" c="80"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="38" c="84"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="FIN">
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="38" c="80"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="38" c="84"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une machine abstraite</Comment>
+<Tag>WellDefinedness_removeCoordination</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="15"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:1:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="38" c="13"/>
+</Attr>
+</Id>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:1:2" typref="4290625779">
+<Attr>
+<Pos s="6" l="38" c="16"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="27"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:2:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="38" c="25"/>
+</Attr>
+</Id>
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:2:2" typref="1711505738">
+<Attr>
+<Pos s="9" l="38" c="28"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="42"/>
+</Attr>
+<Id value="cc" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:3:1" typref="3102896358">
+<Attr>
+<Pos s="2" l="38" c="40"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="4290625779">
+<Attr>
+<Pos s="3" l="38" c="43"/>
+</Attr>
+<Id value="career" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:3:2:1" typref="1586195109">
+<Attr>
+<Pos s="6" l="38" c="47"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="59"/>
+</Attr>
+<Id value="pp" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:4:1" typref="2011556089">
+<Attr>
+<Pos s="2" l="38" c="57"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="38" c="60"/>
+</Attr>
+<Id value="members" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:4:2:1" typref="1103259374">
+<Attr>
+<Pos s="7" l="38" c="64"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&gt;">
+<Attr>
+<Pos s="1" l="38" c="99"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos s="4" l="38" c="75"/>
+</Attr>
+<Unary_Exp op="dom" typref="1711505738">
+<Attr>
+<Pos s="3" l="38" c="80"/>
+</Attr>
+<Id value="coordination" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:5:1:1:1" typref="2480913287">
+<Attr>
+<Pos s="12" l="38" c="84"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value="0" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:5:6:2:1:5:2" typref="2701647786">
+<Attr>
+<Pos s="1" l="38" c="101"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="2480913287">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:1:1:1:1"/>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1103259374">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:2:1:1:1"/>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:2:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1586195109">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:3:1:1:1"/>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:3:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1553777810">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:4:1:1:1:1"/>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:4:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1711505738">
+<Unary_Exp op="POW">
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:5:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="4290625779">
+<Unary_Exp op="POW">
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:6:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="2028581397">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:7:1:1:1:1"/>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:7:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2083231366">
+<Unary_Exp op="POW">
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:8:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="2108146036">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:9:1:1:1:1"/>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:9:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2701647786">
+<Id value="INTEGER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:10:1"/>
+</Type>
+<Type id="3817003670">
+<Unary_Exp op="POW">
+<Generic_Type tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:11:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="2011556089">
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:12:1"/>
+</Type>
+<Type id="1900676669">
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:13:1"/>
+</Type>
+<Type id="495022933">
+<Binary_Exp op="*">
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:14:1:1"/>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:14:1:2"/>
+</Binary_Exp>
+</Type>
+<Type id="3102896358">
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:15:1"/>
+</Type>
+<Type id="2180358068">
+<Binary_Exp op="*">
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:16:1:1"/>
+<Id value="DEPARTAMENT" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:16:1:2"/>
+</Binary_Exp>
+</Type>
+<Type id="3418219986">
+<Binary_Exp op="*">
+<Id value="PROFESSOR" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:17:1:1"/>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\DepartamentMch.bxml:1:6:17:1:2"/>
+</Binary_Exp>
+</Type>
+<Type id="4290625779">
+<Unary_Exp op="POW">
+<Id value="CAREER" tag="D:/B projects/SchoolManagement/bdp\Career_ctx.bxml:1:3:1:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="1711505738">
+<Unary_Exp op="POW">
+<Id value="PROFESSOR" tag="D:/B projects/SchoolManagement/bdp\ProfessorMch.bxml:1:3:1:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="2083231366">
+<Unary_Exp op="POW">
+<Id value="DEPARTAMENT" tag="D:/B projects/SchoolManagement/bdp\Departament_ctx.bxml:1:3:1:1:1"/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+</Proof_Obligations>

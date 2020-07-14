@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<db_xml>
+    <atelierb version="3_7_ubuntu-cvs" />
+    <project decomp_dir="D:\B projects\SchoolManagement\bdp\expand_src" old_decomp_dir="D:\B projects\SchoolManagement\bdp\src">
+        <!-- Definition directory list -->
+        <definition_dir path="D:\B projects\SchoolManagement" />
+        <!-- Component file list -->
+        <component_file path="D:\B projects\SchoolManagement" name="CareerMch" suffix="mch" user="Fagne">
+            <component name="CareerMch" type="specification" />
+        </component_file>
+        <component_file path="D:\B projects\SchoolManagement" name="Career_ctx" suffix="mch" user="Fagne">
+            <component name="Career_ctx" type="specification" />
+        </component_file>
+        <component_file path="D:\B projects\SchoolManagement" name="ClassMch" suffix="mch" user="Fagne">
+            <component name="ClassMch" type="specification" />
+        </component_file>
+        <component_file path="D:\B projects\SchoolManagement" name="DepartamentMch" suffix="mch" user="Fagne">
+            <component name="DepartamentMch" type="specification" />
+        </component_file>
+        <component_file path="D:\B projects\SchoolManagement" name="Departament_ctx" suffix="mch" user="Fagne">
+            <component name="Departament_ctx" type="specification" />
+        </component_file>
+        <component_file path="D:\B projects\SchoolManagement" name="ProfessorMch" suffix="mch" user="Fagne">
+            <component name="ProfessorMch" type="specification" />
+        </component_file>
+        <component_file path="D:\B projects\SchoolManagement" name="StudentMch" suffix="mch" user="Fagne">
+            <component name="StudentMch" type="specification" />
+        </component_file>
+        <component_file path="D:\B projects\SchoolManagement" name="Student_ctx" suffix="mch" user="Fagne">
+            <component name="Student_ctx" type="specification" />
+        </component_file>
+        <component_file path="D:\B projects\SchoolManagement" name="SubjectMch" suffix="mch" user="Fagne">
+            <component name="SubjectMch" type="specification" />
+        </component_file>
+    </project>
+</db_xml>

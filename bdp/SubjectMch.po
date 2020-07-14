@@ -1,0 +1,22 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(5) & _f(8) & removePreRequirement.1,(_f(3) => _f(9));
+_f(1) & _f(2) & _f(5) & _f(6) & addPreRequirement.1,(_f(3) => _f(7));
+_f(1) & _f(2) & Initialisation.1,(_f(3) => _f(4))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+SUBJECT: FIN(INTEGER) & not(SUBJECT = {});
+"Invariant is preserved";
+(({}) : (((SUBJECT) <-> (SUBJECT))));
+((preRequirement) : (((SUBJECT) <-> (SUBJECT))));
+((mm) : (SUBJECT)) & ((pp) : (SUBJECT)) & not(pp : ran(((({mm})) <| (preRequirement))));
+((((preRequirement) \/ (({((mm) |-> (pp))})))) : (((SUBJECT) <-> (SUBJECT))));
+((mm) : (SUBJECT)) & ((pp) : (SUBJECT)) & ((pp) : (ran(((({mm})) <| (preRequirement)))));
+(((preRequirement - ({((mm) |-> (pp))}))) : (((SUBJECT) <-> (SUBJECT))));
+((pp) : (SUBJECT));
+((mm) : (SUBJECT))
+END
+&
+THEORY EnumerateX
+END

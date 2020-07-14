@@ -1,0 +1,68 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(3) & _f(11) & _f(26) & removeOptionalSubjects.2,(_f(4) & _f(7) => _f(28));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(26) & removeOptionalSubjects.1,(_f(4) & _f(23) => _f(27));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(22) & addOptionalSubjects.2,(_f(4) & _f(7) => _f(25));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(22) & addOptionalSubjects.1,(_f(4) & _f(23) => _f(24));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(19) & removeRequiredSubjects.2,(_f(4) & _f(7) => _f(21));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(19) & removeRequiredSubjects.1,(_f(4) & _f(5) => _f(20));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(16) & addRequiredSubjects.2,(_f(4) & _f(7) => _f(18));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(16) & addRequiredSubjects.1,(_f(4) & _f(5) => _f(17));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(14) & removeStudentCareer.1,(_f(4) & _f(9) => _f(15));
+_f(1) & _f(2) & _f(3) & _f(11) & _f(12) & addStudentCarrer.1,(_f(4) & _f(9) => _f(13));
+_f(1) & _f(2) & _f(3) & Initialisation.3,(_f(4) & _f(9) => _f(10));
+_f(1) & _f(2) & _f(3) & Initialisation.2,(_f(4) & _f(7) => _f(8));
+_f(1) & _f(2) & _f(3) & Initialisation.1,(_f(4) & _f(5) => _f(6))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+SUBJECT: FIN(INTEGER) & not(SUBJECT = {}) & STUDENT: FIN(INTEGER) & not(STUDENT = {}) & CAREER: FIN(INTEGER) & not(CAREER = {});
+((preRequirement) : (((SUBJECT) <-> (SUBJECT)))) & ((coordination) : (((PROFESSOR) +-> (CAREER)))) & ((members) : (((PROFESSOR) +-> (DEPARTAMENT)))) & ((career) : (((CAREER) +-> (DEPARTAMENT)))) & (card(dom(coordination)) <= 2) & (0 <= card(dom(coordination)));
+"Invariant is preserved";
+"Check invariant ((requiredSubjects) : (((CAREER) <-> (SUBJECT))))";
+(({}) : (((CAREER) <-> (SUBJECT))));
+"Check invariant ((((requiredSubjects) /\ (optionalSubjects))) = ({}))";
+(((({}) /\ ({}))) = ({}));
+"Check invariant ((enrolledStudents) : (((STUDENT) +-> (CAREER))))";
+(({}) : (((STUDENT) +-> (CAREER))));
+((requiredSubjects) : (((CAREER) <-> (SUBJECT)))) & ((optionalSubjects) : (((CAREER) <-> (SUBJECT)))) & ((((requiredSubjects) /\ (optionalSubjects))) = ({})) & ((enrolledStudents) : (((STUDENT) +-> (CAREER))));
+((aa) : (STUDENT)) & ((cc) : (CAREER)) & not(aa : dom(enrolledStudents)) & ((cc) : (dom(career)));
+((((enrolledStudents) \/ (({((aa) |-> (cc))})))) : (((STUDENT) +-> (CAREER))));
+((aa) : (STUDENT)) & ((cc) : (CAREER)) & ((aa) : (dom(enrolledStudents))) & ((cc) : (ran(((({aa})) <| (enrolledStudents)))));
+(((enrolledStudents - ({((aa) |-> (cc))}))) : (((STUDENT) +-> (CAREER))));
+((cc) : (CAREER)) & ((mm) : (SUBJECT)) & not(mm : ran(((({cc})) <| (optionalSubjects)))) & not(mm : ran(((({cc})) <| (requiredSubjects)))) & ((cc) : (dom(career)));
+((((requiredSubjects) \/ (({((cc) |-> (mm))})))) : (((CAREER) <-> (SUBJECT))));
+((((((requiredSubjects) \/ (({((cc) |-> (mm))})))) /\ (optionalSubjects))) = ({}));
+((cc) : (CAREER)) & ((mm) : (SUBJECT)) & ((mm) : (ran(((({cc})) <| (requiredSubjects)))));
+(((requiredSubjects - ({((cc) |-> (mm))}))) : (((CAREER) <-> (SUBJECT))));
+(((((requiredSubjects - ({((cc) |-> (mm))}))) /\ (optionalSubjects))) = ({}));
+((cc) : (CAREER)) & ((mm) : (SUBJECT)) & not(mm : ran(((({cc})) <| (requiredSubjects)))) & not(mm : ran(((({cc})) <| (optionalSubjects)))) & ((cc) : (dom(career)));
+"Check invariant ((optionalSubjects) : (((CAREER) <-> (SUBJECT))))";
+((((optionalSubjects) \/ (({((cc) |-> (mm))})))) : (((CAREER) <-> (SUBJECT))));
+((((requiredSubjects) /\ (((optionalSubjects) \/ (({((cc) |-> (mm))})))))) = ({}));
+((cc) : (CAREER)) & ((mm) : (SUBJECT)) & ((mm) : (ran(((({cc})) <| (optionalSubjects)))));
+(((optionalSubjects - ({((cc) |-> (mm))}))) : (((CAREER) <-> (SUBJECT))));
+((((requiredSubjects) /\ ((optionalSubjects - ({((cc) |-> (mm))}))))) = ({}));
+((mm) : (SUBJECT)) & ((pp) : (SUBJECT)) & not(pp : ran(((({mm})) <| (preRequirement))));
+((mm) : (SUBJECT)) & ((pp) : (SUBJECT)) & ((pp) : (ran(((({mm})) <| (preRequirement)))));
+((pp) : (PROFESSOR)) & ((dd) : (DEPARTAMENT)) & not(pp : dom(members));
+((pp) : (PROFESSOR)) & ((dd) : (DEPARTAMENT)) & ((pp) : (dom(members))) & ((dd) : (ran(((({pp})) <| (members)))));
+((dd) : (DEPARTAMENT)) & ((cc) : (CAREER)) & not(cc : dom(career));
+((dd) : (DEPARTAMENT)) & ((cc) : (CAREER)) & ((cc) : (dom(career))) & ((dd) : (ran(((({cc})) <| (career)))));
+((pp) : (PROFESSOR)) & ((cc) : (CAREER)) & ((pp) : (dom(members))) & not(pp : dom(coordination)) & ((ran(((({cc})) <| (career)))) = (ran(((({pp})) <| (members))))) & (card(dom(coordination)) +1 <= 2);
+((cc) : (CAREER)) & ((pp) : (PROFESSOR)) & ((cc) : (dom(career))) & ((pp) : (dom(members))) & (0 +1 <= card(dom(coordination)));
+btrue;
+((((requiredSubjects) /\ (optionalSubjects))) = ({}));
+((optionalSubjects) : (((CAREER) <-> (SUBJECT))));
+((requiredSubjects) : (((CAREER) <-> (SUBJECT))));
+not(aa : dom(enrolledStudents));
+((cc) : (CAREER));
+((aa) : (STUDENT));
+((aa) : (dom(enrolledStudents)));
+not(mm : ran(((({cc})) <| (requiredSubjects))));
+not(mm : ran(((({cc})) <| (optionalSubjects))));
+((mm) : (SUBJECT))
+END
+&
+THEORY EnumerateX
+END

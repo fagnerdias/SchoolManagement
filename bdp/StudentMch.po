@@ -1,0 +1,29 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(3) & _f(6) & _f(7) & addaprovedSubjects.1,(_f(4) => _f(8));
+_f(1) & _f(2) & _f(3) & Initialisation.1,(_f(4) => _f(5))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+SUBJECT: FIN(INTEGER) & not(SUBJECT = {}) & STUDENT: FIN(INTEGER) & not(STUDENT = {});
+((preRequirement) : (((SUBJECT) <-> (SUBJECT)))) & ((requiredSubjects) : (((CAREER) <-> (SUBJECT)))) & ((optionalSubjects) : (((CAREER) <-> (SUBJECT)))) & ((((requiredSubjects) /\ (optionalSubjects))) = ({})) & ((enrolledStudents) : (((STUDENT) +-> (CAREER))));
+"Invariant is preserved";
+(({}) : (((STUDENT) <-> (SUBJECT))));
+((aprovedSubjects) : (((STUDENT) <-> (SUBJECT))));
+((aa) : (STUDENT)) & ((mm) : (SUBJECT)) & ((aa) : (dom(enrolledStudents)));
+((((aprovedSubjects) \/ (({((aa) |-> (mm))})))) : (((STUDENT) <-> (SUBJECT))));
+((mm) : (SUBJECT)) & ((pp) : (SUBJECT)) & not(pp : ran(((({mm})) <| (preRequirement))));
+((mm) : (SUBJECT)) & ((pp) : (SUBJECT)) & ((pp) : (ran(((({mm})) <| (preRequirement)))));
+((aa) : (STUDENT)) & ((cc) : (CAREER)) & not(aa : dom(enrolledStudents)) & ((cc) : (dom(career)));
+((aa) : (STUDENT)) & ((cc) : (CAREER)) & ((aa) : (dom(enrolledStudents))) & ((cc) : (ran(((({aa})) <| (enrolledStudents)))));
+((cc) : (CAREER)) & ((mm) : (SUBJECT)) & not(mm : ran(((({cc})) <| (optionalSubjects)))) & not(mm : ran(((({cc})) <| (requiredSubjects)))) & ((cc) : (dom(career)));
+((cc) : (CAREER)) & ((mm) : (SUBJECT)) & ((mm) : (ran(((({cc})) <| (requiredSubjects)))));
+((cc) : (CAREER)) & ((mm) : (SUBJECT)) & not(mm : ran(((({cc})) <| (requiredSubjects)))) & not(mm : ran(((({cc})) <| (optionalSubjects)))) & ((cc) : (dom(career)));
+((cc) : (CAREER)) & ((mm) : (SUBJECT)) & ((mm) : (ran(((({cc})) <| (optionalSubjects)))));
+btrue;
+((mm) : (SUBJECT));
+((aa) : (STUDENT))
+END
+&
+THEORY EnumerateX
+END

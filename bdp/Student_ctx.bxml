@@ -1,0 +1,25 @@
+<Machine name='Student_ctx' type='abstraction'>
+<Sets>
+<Attr>
+<Pos l='6' c='1' s='4'/>
+</Attr>
+<Set>
+<Id value='STUDENT' typref='1662888534'>
+<Attr>
+<Pos l='6' c='6' s='7'/>
+</Attr>
+</Id>
+</Set>
+</Sets>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<TypeInfos>
+<Type id='1662888534'>
+<Unary_Exp op='POW'>
+<Id value='STUDENT'/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>

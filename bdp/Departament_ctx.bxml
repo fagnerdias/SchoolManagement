@@ -1,0 +1,25 @@
+<Machine name='Departament_ctx' type='abstraction'>
+<Sets>
+<Attr>
+<Pos l='6' c='1' s='4'/>
+</Attr>
+<Set>
+<Id value='DEPARTAMENT' typref='2083231366'>
+<Attr>
+<Pos l='6' c='6' s='11'/>
+</Attr>
+</Id>
+</Set>
+</Sets>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<TypeInfos>
+<Type id='2083231366'>
+<Unary_Exp op='POW'>
+<Id value='DEPARTAMENT'/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>
