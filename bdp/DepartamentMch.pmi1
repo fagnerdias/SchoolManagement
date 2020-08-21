@@ -1,9 +1,9 @@
 ﻿THEORY BalanceX IS
-  DepartamentMch,20,0,0,19,0,0,0;
+  DepartamentMch,19,0,0,18,0,0,0;
   Initialisation,5,0,0,5,0,0,0;
   WellDefinednessInvariant,2,0,0,2,0,0,0;
   WellDefinedness_Precondition_addCoordenador,1,0,0,1,0,0,0;
-  WellDefinedness_Precondition_removeCoordination,2,0,0,2,0,0,0;
+  WellDefinedness_Precondition_removeCoordination,1,0,0,1,0,0,0;
   addCareerDepartament,1,0,0,1,0,0,0;
   addCoordenador,3,0,0,3,0,0,0;
   addProfessorMember,1,0,0,1,0,0,0;
@@ -13,7 +13,6 @@
 END
 &
 THEORY ProofState IS
-  Proved(0);
   Proved(0);
   Proved(0);
   Proved(0);
@@ -41,7 +40,6 @@ THEORY MethodList IS
   pr;
   pr;
   pr;
-  pr;
   ?;
   pr;
   pr;
@@ -59,7 +57,6 @@ THEORY MethodList IS
 END
 &
 THEORY PassList IS
-  Force(0),?;
   Force(0),?;
   Force(0),?;
   Force(0),?;

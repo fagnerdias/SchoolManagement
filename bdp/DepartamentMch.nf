@@ -136,11 +136,11 @@ THEORY ListPreconditionX IS
   List_Precondition(Machine(DepartamentMch),addCareerDepartament)==(dd: DEPARTAMENT & cc: CAREER & cc/:dom(career));
   List_Precondition(Machine(DepartamentMch),removeCareerDepartament)==(dd: DEPARTAMENT & cc: CAREER & cc: dom(career) & dd: ran({cc}<|career));
   List_Precondition(Machine(DepartamentMch),addCoordenador)==(pp: PROFESSOR & cc: CAREER & pp: dom(members) & pp/:dom(coordination) & ran({cc}<|career) = ran({pp}<|members) & card(dom(coordination))<2);
-  List_Precondition(Machine(DepartamentMch),removeCoordination)==(cc: CAREER & pp: PROFESSOR & cc: dom(career) & pp: dom(members) & card(dom(coordination))>0)
+  List_Precondition(Machine(DepartamentMch),removeCoordination)==(cc: CAREER & pp: PROFESSOR & cc: dom(career) & pp: dom(members) & card(dom(coordination))>0 & card(dom(coordination))<=2)
 END
 &
 THEORY ListSubstitutionX IS
-  Expanded_List_Substitution(Machine(DepartamentMch),removeCoordination)==(cc: CAREER & pp: PROFESSOR & cc: dom(career) & pp: dom(members) & card(dom(coordination))>0 | coordination:=coordination-{pp|->cc});
+  Expanded_List_Substitution(Machine(DepartamentMch),removeCoordination)==(cc: CAREER & pp: PROFESSOR & cc: dom(career) & pp: dom(members) & card(dom(coordination))>0 & card(dom(coordination))<=2 | coordination:=coordination-{pp|->cc});
   Expanded_List_Substitution(Machine(DepartamentMch),addCoordenador)==(pp: PROFESSOR & cc: CAREER & pp: dom(members) & pp/:dom(coordination) & ran({cc}<|career) = ran({pp}<|members) & card(dom(coordination))<2 | coordination:=coordination\/{pp|->cc});
   Expanded_List_Substitution(Machine(DepartamentMch),removeCareerDepartament)==(dd: DEPARTAMENT & cc: CAREER & cc: dom(career) & dd: ran({cc}<|career) | career:=career-{cc|->dd});
   Expanded_List_Substitution(Machine(DepartamentMch),addCareerDepartament)==(dd: DEPARTAMENT & cc: CAREER & cc/:dom(career) | career:=career\/{cc|->dd});

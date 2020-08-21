@@ -210,7 +210,7 @@ THEORY ListSeenInfoX IS
   Seen_Context_List_Assertions(Machine(ClassMch))==(btrue);
   Seen_Context_List_Properties(Machine(ClassMch))==(SUBJECT: FIN(INTEGER) & not(SUBJECT = {}) & STUDENT: FIN(INTEGER) & not(STUDENT = {}) & CAREER: FIN(INTEGER) & not(CAREER = {}) & PROFESSOR: FIN(INTEGER) & not(PROFESSOR = {}) & DEPARTAMENT: FIN(INTEGER) & not(DEPARTAMENT = {}));
   Seen_List_Constraints(Machine(ClassMch))==(btrue);
-  Seen_List_Precondition(Machine(ClassMch),removeCoordination)==(cc: CAREER & pp: PROFESSOR & cc: dom(career) & pp: dom(members) & card(dom(coordination))>0);
+  Seen_List_Precondition(Machine(ClassMch),removeCoordination)==(cc: CAREER & pp: PROFESSOR & cc: dom(career) & pp: dom(members) & card(dom(coordination))>0 & card(dom(coordination))<=2);
   Seen_Expanded_List_Substitution(Machine(ClassMch),removeCoordination)==(coordination:=coordination-{pp|->cc});
   Seen_List_Precondition(Machine(ClassMch),addCoordenador)==(pp: PROFESSOR & cc: CAREER & pp: dom(members) & pp/:dom(coordination) & ran({cc}<|career) = ran({pp}<|members) & card(dom(coordination))<2);
   Seen_Expanded_List_Substitution(Machine(ClassMch),addCoordenador)==(coordination:=coordination\/{pp|->cc});

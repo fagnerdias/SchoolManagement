@@ -35,7 +35,7 @@ OPERATIONS
         END ;
 
     removeCoordination ( cc , pp ) =
-        PRE cc : CAREER & pp : PROFESSOR & cc : dom ( career ) & pp : dom ( members ) & card ( dom ( coordination ) ) > 0
+        PRE cc : CAREER & pp : PROFESSOR & cc : dom ( career ) & pp : dom ( members ) & card ( dom ( coordination ) ) > 0 & card ( dom ( coordination ) ) <= 2
         THEN coordination := coordination - { pp |-> cc }
         END
 

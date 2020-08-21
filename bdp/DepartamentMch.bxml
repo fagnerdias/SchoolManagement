@@ -1107,6 +1107,31 @@
 </Attr>
 </Integer_Literal>
 </Exp_Comparison>
+<Exp_Comparison op='&lt;='>
+<Attr>
+<Pos l='38' c='128' s='2'/>
+</Attr>
+<Unary_Exp op='card' typref='2701647786'>
+<Attr>
+<Pos l='38' c='105' s='4'/>
+</Attr>
+<Unary_Exp op='dom' typref='1711505738'>
+<Attr>
+<Pos l='38' c='110' s='3'/>
+</Attr>
+<Id value='coordination' typref='2480913287'>
+<Attr>
+<Pos l='38' c='114' s='12'/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Unary_Exp>
+<Integer_Literal value='2' typref='2701647786'>
+<Attr>
+<Pos l='38' c='130' s='1'/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
 </Nary_Pred>
 </Precondition>
 <Body>

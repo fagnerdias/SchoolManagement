@@ -1,5 +1,5 @@
 <Proof_Obligations>
-<Define name="B definitions">
+<Define merge="=" name="B definitions">
 <Nary_Pred op="&amp;">
 <Exp_Comparison op="=">
 <Id value="NAT"/>
@@ -17,198 +17,198 @@
 </Exp_Comparison>
 </Nary_Pred>
 </Define>
-<Define name="ctx">
+<Define merge="-" name="ctx">
 <Attr>
-<Pos s="4" l="6" c="1"/>
+<Pos l="6" c="1" s="4"/>
 </Attr>
 <Set>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:1:1:1" value="SUBJECT" typref="432315463">
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:1:1:1">
 <Attr>
-<Pos s="7" l="6" c="6"/>
+<Pos l="6" c="6" s="7"/>
 </Attr>
 </Id>
 </Set>
 <Attr>
-<Pos s="4" l="6" c="1"/>
+<Pos l="6" c="1" s="4"/>
 </Attr>
 <Set>
-<Id tag="D:/B projects/SchoolManagement/bdp\Student_ctx.bxml:1:1:1:1" value="STUDENT" typref="1662888534">
+<Id typref="1662888534" value="STUDENT" tag="D:/B projects/SchoolManagement/bdp\Student_ctx.bxml:1:1:1:1">
 <Attr>
-<Pos s="7" l="6" c="6"/>
+<Pos l="6" c="6" s="7"/>
 </Attr>
 </Id>
 </Set>
 </Define>
-<Define name="seext">
+<Define merge="-" name="seext">
 <Attr>
-<Pos s="9" l="8" c="1"/>
+<Pos l="8" c="1" s="9"/>
 </Attr>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="8" c="26"/>
+<Pos l="8" c="26" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:3:1:1" initialTag="preRequirement" value="preRequirement" typref="786576812">
+<Id typref="786576812" initialTag="preRequirement" value="preRequirement" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:3:1:1">
 <Attr>
-<Pos s="14" l="8" c="11"/>
-</Attr>
-</Id>
-<Binary_Exp initialTag="((SUBJECT) &lt;-> (SUBJECT))" op="&lt;->" typref="2924940375">
-<Attr>
-<Pos s="3" l="8" c="36"/>
-</Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:3:1:2:1" value="SUBJECT" typref="432315463">
-<Attr>
-<Pos s="7" l="8" c="28"/>
+<Pos l="8" c="11" s="14"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:3:1:2:2" value="SUBJECT" typref="432315463">
+<Binary_Exp typref="2924940375" op="&lt;->" initialTag="((SUBJECT) &lt;-> (SUBJECT))">
 <Attr>
-<Pos s="7" l="8" c="40"/>
+<Pos l="8" c="36" s="3"/>
+</Attr>
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:3:1:2:1">
+<Attr>
+<Pos l="8" c="28" s="7"/>
+</Attr>
+</Id>
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:3:1:2:2">
+<Attr>
+<Pos l="8" c="40" s="7"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 <Attr>
-<Pos s="9" l="8" c="1"/>
+<Pos l="8" c="1" s="9"/>
 </Attr>
 <Nary_Pred op="&amp;">
-<Exp_Comparison initialTag="((requiredSubjects) : (((CAREER) &lt;-> (SUBJECT))))" op=":">
+<Exp_Comparison op=":" initialTag="((requiredSubjects) : (((CAREER) &lt;-> (SUBJECT))))">
 <Attr>
-<Pos s="1" l="8" c="28"/>
+<Pos l="8" c="28" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:1:1" value="requiredSubjects" typref="1177173478">
+<Id typref="1177173478" value="requiredSubjects" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:1:1">
 <Attr>
-<Pos s="16" l="8" c="11"/>
-</Attr>
-</Id>
-<Binary_Exp op="&lt;->" typref="1301204083">
-<Attr>
-<Pos s="3" l="8" c="36"/>
-</Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:1:2:1" value="CAREER" typref="4290625779">
-<Attr>
-<Pos s="6" l="8" c="29"/>
+<Pos l="8" c="11" s="16"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:1:2:2" value="SUBJECT" typref="432315463">
+<Binary_Exp typref="1301204083" op="&lt;->">
 <Attr>
-<Pos s="7" l="8" c="40"/>
+<Pos l="8" c="36" s="3"/>
+</Attr>
+<Id typref="4290625779" value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:1:2:1">
+<Attr>
+<Pos l="8" c="29" s="6"/>
 </Attr>
 </Id>
-</Binary_Exp>
-</Exp_Comparison>
-<Exp_Comparison initialTag="((optionalSubjects) : (((CAREER) &lt;-> (SUBJECT))))" op=":">
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:1:2:2">
 <Attr>
-<Pos s="1" l="8" c="67"/>
-</Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:2:1" value="optionalSubjects" typref="1177173478">
-<Attr>
-<Pos s="16" l="8" c="50"/>
-</Attr>
-</Id>
-<Binary_Exp op="&lt;->" typref="1301204083">
-<Attr>
-<Pos s="3" l="8" c="75"/>
-</Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:2:2:1" value="CAREER" typref="4290625779">
-<Attr>
-<Pos s="6" l="8" c="68"/>
-</Attr>
-</Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:2:2:2" value="SUBJECT" typref="432315463">
-<Attr>
-<Pos s="7" l="8" c="79"/>
+<Pos l="8" c="40" s="7"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
-<Exp_Comparison initialTag="((((requiredSubjects) /\ (optionalSubjects))) = ({}))" op="=">
+<Exp_Comparison op=":" initialTag="((optionalSubjects) : (((CAREER) &lt;-> (SUBJECT))))">
 <Attr>
-<Pos s="1" l="9" c="64"/>
+<Pos l="8" c="67" s="1"/>
 </Attr>
-<Binary_Exp op="/\" typref="1177173478">
+<Id typref="1177173478" value="optionalSubjects" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:2:1">
 <Attr>
-<Pos s="2" l="9" c="44"/>
-</Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:3:1:1" value="requiredSubjects" typref="1177173478">
-<Attr>
-<Pos s="16" l="9" c="27"/>
+<Pos l="8" c="50" s="16"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:3:1:2" value="optionalSubjects" typref="1177173478">
+<Binary_Exp typref="1301204083" op="&lt;->">
 <Attr>
-<Pos s="16" l="9" c="47"/>
+<Pos l="8" c="75" s="3"/>
+</Attr>
+<Id typref="4290625779" value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:2:2:1">
+<Attr>
+<Pos l="8" c="68" s="6"/>
+</Attr>
+</Id>
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:2:2:2">
+<Attr>
+<Pos l="8" c="79" s="7"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<EmptySet tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:3:2" typref="3817003670">
+</Exp_Comparison>
+<Exp_Comparison op="=" initialTag="((((requiredSubjects) /\ (optionalSubjects))) = ({}))">
 <Attr>
-<Pos s="2" l="9" c="66"/>
+<Pos l="9" c="64" s="1"/>
+</Attr>
+<Binary_Exp typref="1177173478" op="/\">
+<Attr>
+<Pos l="9" c="44" s="2"/>
+</Attr>
+<Id typref="1177173478" value="requiredSubjects" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:3:1:1">
+<Attr>
+<Pos l="9" c="27" s="16"/>
+</Attr>
+</Id>
+<Id typref="1177173478" value="optionalSubjects" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:3:1:2">
+<Attr>
+<Pos l="9" c="47" s="16"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<EmptySet typref="3817003670" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:3:2">
+<Attr>
+<Pos l="9" c="66" s="2"/>
 </Attr>
 </EmptySet>
 </Exp_Comparison>
-<Exp_Comparison initialTag="((enrolledStudents) : (((STUDENT) +-> (CAREER))))" op=":">
+<Exp_Comparison op=":" initialTag="((enrolledStudents) : (((STUDENT) +-> (CAREER))))">
 <Attr>
-<Pos s="1" l="9" c="88"/>
+<Pos l="9" c="88" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:4:1" value="enrolledStudents" typref="3015466747">
+<Id typref="3015466747" value="enrolledStudents" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:4:1">
 <Attr>
-<Pos s="16" l="9" c="71"/>
-</Attr>
-</Id>
-<Binary_Exp op="+->" typref="596299678">
-<Attr>
-<Pos s="3" l="9" c="98"/>
-</Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:4:2:1" value="STUDENT" typref="1662888534">
-<Attr>
-<Pos s="7" l="9" c="90"/>
+<Pos l="9" c="71" s="16"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:4:2:2" value="CAREER" typref="4290625779">
+<Binary_Exp typref="596299678" op="+->">
 <Attr>
-<Pos s="6" l="9" c="101"/>
+<Pos l="9" c="98" s="3"/>
+</Attr>
+<Id typref="1662888534" value="STUDENT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:4:2:1">
+<Attr>
+<Pos l="9" c="90" s="7"/>
+</Attr>
+</Id>
+<Id typref="4290625779" value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:3:1:4:2:2">
+<Attr>
+<Pos l="9" c="101" s="6"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 </Nary_Pred>
 </Define>
-<Define name="lprp"/>
-<Define name="inprp"/>
-<Define name="inext"/>
-<Define name="inv">
+<Define merge="=" name="lprp"/>
+<Define merge="=" name="inprp"/>
+<Define merge="=" name="inext"/>
+<Define merge="-" name="inv">
 <Attr>
-<Pos s="9" l="8" c="1"/>
+<Pos l="8" c="1" s="9"/>
 </Attr>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="8" c="27"/>
+<Pos l="8" c="27" s="1"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:1" initialTag="aprovedSubjects" value="aprovedSubjects" typref="683629755">
+<Id typref="683629755" initialTag="aprovedSubjects" value="aprovedSubjects" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:1">
 <Attr>
-<Pos s="15" l="8" c="11"/>
-</Attr>
-</Id>
-<Binary_Exp initialTag="((STUDENT) &lt;-> (SUBJECT))" op="&lt;->" typref="2644162056">
-<Attr>
-<Pos s="3" l="8" c="35"/>
-</Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:1" value="STUDENT" typref="1662888534">
-<Attr>
-<Pos s="7" l="8" c="28"/>
+<Pos l="8" c="11" s="15"/>
 </Attr>
 </Id>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:2" value="SUBJECT" typref="432315463">
+<Binary_Exp typref="2644162056" op="&lt;->" initialTag="((STUDENT) &lt;-> (SUBJECT))">
 <Attr>
-<Pos s="7" l="8" c="39"/>
+<Pos l="8" c="35" s="3"/>
+</Attr>
+<Id typref="1662888534" value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:1">
+<Attr>
+<Pos l="8" c="28" s="7"/>
+</Attr>
+</Id>
+<Id typref="432315463" value="SUBJECT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:2">
+<Attr>
+<Pos l="8" c="39" s="7"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 </Define>
-<Define name="ass"/>
-<Define name="cst"/>
+<Define merge="=" name="ass"/>
+<Define merge="=" name="cst"/>
 <Proof_Obligation>
 <Comment>Initialisation dans une machine abstraite</Comment>
 <Tag>Initialisation</Tag>
@@ -228,27 +228,27 @@
 <Goal>
 <Binary_Pred op="=>">
 <Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" op=":">
+<Exp_Comparison op=":" goalTag="Invariant is preserved">
 <Attr>
-<Pos s="1" l="8" c="27"/>
+<Pos l="8" c="27" s="1"/>
 </Attr>
-<EmptySet tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:4:1:2:1,D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:1,D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:4:1:1:1" typref="683629755">
+<EmptySet typref="683629755" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:4:1:2:1,D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:1,D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:4:1:1:1">
 <Attr>
-<Pos s="15" l="9" c="17"/>
+<Pos l="9" c="17" s="15"/>
 </Attr>
 </EmptySet>
-<Binary_Exp initialTag="((STUDENT) &lt;-> (SUBJECT))" op="&lt;->" typref="2644162056">
+<Binary_Exp typref="2644162056" op="&lt;->" initialTag="((STUDENT) &lt;-> (SUBJECT))">
 <Attr>
-<Pos s="3" l="8" c="35"/>
+<Pos l="8" c="35" s="3"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:1" value="STUDENT" typref="1662888534">
+<Id typref="1662888534" value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:1">
 <Attr>
-<Pos s="7" l="8" c="28"/>
+<Pos l="8" c="28" s="7"/>
 </Attr>
 </Id>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:2" value="SUBJECT" typref="432315463">
+<Id typref="432315463" value="SUBJECT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:2">
 <Attr>
-<Pos s="7" l="8" c="39"/>
+<Pos l="8" c="39" s="7"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -274,50 +274,50 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="12" c="15"/>
+<Pos l="12" c="15" s="1"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:1" value="aa" typref="3790660461">
+<Id typref="3790660461" value="aa" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:1">
 <Attr>
-<Pos s="2" l="12" c="13"/>
-</Attr>
-</Id>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:2" value="STUDENT" typref="1662888534">
-<Attr>
-<Pos s="7" l="12" c="17"/>
+<Pos l="12" c="13" s="2"/>
 </Attr>
 </Id>
-</Exp_Comparison>
-<Exp_Comparison op=":">
+<Id typref="1662888534" value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:2">
 <Attr>
-<Pos s="1" l="12" c="29"/>
-</Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:1" value="mm" typref="3029594684">
-<Attr>
-<Pos s="2" l="12" c="27"/>
-</Attr>
-</Id>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:2" value="SUBJECT" typref="432315463">
-<Attr>
-<Pos s="7" l="12" c="30"/>
+<Pos l="12" c="17" s="7"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="12" c="42"/>
+<Pos l="12" c="29" s="1"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:3:1" value="aa" typref="3790660461">
+<Id typref="3029594684" value="mm" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:1">
 <Attr>
-<Pos s="2" l="12" c="40"/>
+<Pos l="12" c="27" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="dom" typref="1662888534">
+<Id typref="432315463" value="SUBJECT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:2">
 <Attr>
-<Pos s="3" l="12" c="44"/>
+<Pos l="12" c="30" s="7"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:3:2:1" value="enrolledStudents" typref="3015466747">
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
 <Attr>
-<Pos s="16" l="12" c="48"/>
+<Pos l="12" c="42" s="1"/>
+</Attr>
+<Id typref="3790660461" value="aa" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:3:1">
+<Attr>
+<Pos l="12" c="40" s="2"/>
+</Attr>
+</Id>
+<Unary_Exp typref="1662888534" op="dom">
+<Attr>
+<Pos l="12" c="44" s="3"/>
+</Attr>
+<Id typref="3015466747" value="enrolledStudents" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:3:2:1">
+<Attr>
+<Pos l="12" c="48" s="16"/>
 </Attr>
 </Id>
 </Unary_Exp>
@@ -332,52 +332,52 @@
 <Goal>
 <Binary_Pred op="=>">
 <Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" op=":">
+<Exp_Comparison op=":" goalTag="Invariant is preserved">
 <Attr>
-<Pos s="1" l="8" c="27"/>
+<Pos l="8" c="27" s="1"/>
 </Attr>
-<Binary_Exp tag=",D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:1,D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:3:1:1:1" op="\/" typref="683629755">
+<Binary_Exp typref="683629755" op="\/" tag=",D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:1,D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:3:1:1:1">
 <Attr>
-<Pos s="15" l="13" c="14"/>
+<Pos l="13" c="14" s="15"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:3:1:2:1:1" value="aprovedSubjects" typref="683629755">
+<Id typref="683629755" value="aprovedSubjects" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:3:1:2:1:1">
 <Attr>
-<Pos s="15" l="13" c="33"/>
-</Attr>
-</Id>
-<Nary_Exp op="{" typref="683629755">
-<Attr>
-<Pos s="1" l="13" c="52"/>
-</Attr>
-<Binary_Exp op="|->" typref="1849840328">
-<Attr>
-<Pos s="3" l="13" c="56"/>
-</Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:3:1:2:1:2:1:1" value="aa" typref="3790660461">
-<Attr>
-<Pos s="2" l="13" c="53"/>
+<Pos l="13" c="33" s="15"/>
 </Attr>
 </Id>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:3:1:2:1:2:1:2" value="mm" typref="3029594684">
+<Nary_Exp typref="683629755" op="{">
 <Attr>
-<Pos s="2" l="13" c="60"/>
+<Pos l="13" c="52" s="1"/>
+</Attr>
+<Binary_Exp typref="1849840328" op="|->">
+<Attr>
+<Pos l="13" c="56" s="3"/>
+</Attr>
+<Id typref="3790660461" value="aa" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:3:1:2:1:2:1:1">
+<Attr>
+<Pos l="13" c="53" s="2"/>
+</Attr>
+</Id>
+<Id typref="3029594684" value="mm" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:3:1:2:1:2:1:2">
+<Attr>
+<Pos l="13" c="60" s="2"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Nary_Exp>
 </Binary_Exp>
-<Binary_Exp initialTag="((STUDENT) &lt;-> (SUBJECT))" op="&lt;->" typref="2644162056">
+<Binary_Exp typref="2644162056" op="&lt;->" initialTag="((STUDENT) &lt;-> (SUBJECT))">
 <Attr>
-<Pos s="3" l="8" c="35"/>
+<Pos l="8" c="35" s="3"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:1" value="STUDENT" typref="1662888534">
+<Id typref="1662888534" value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:1">
 <Attr>
-<Pos s="7" l="8" c="28"/>
+<Pos l="8" c="28" s="7"/>
 </Attr>
 </Id>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:2" value="SUBJECT" typref="432315463">
+<Id typref="432315463" value="SUBJECT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:3:1:2:2">
 <Attr>
-<Pos s="7" l="8" c="39"/>
+<Pos l="8" c="39" s="7"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -404,64 +404,64 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="12" c="15"/>
+<Pos l="12" c="15" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:1:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:1:1">
 <Attr>
-<Pos s="2" l="12" c="13"/>
+<Pos l="12" c="13" s="2"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:1:2" value="SUBJECT" typref="432315463">
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:1:2">
 <Attr>
-<Pos s="7" l="12" c="16"/>
+<Pos l="12" c="16" s="7"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="12" c="28"/>
+<Pos l="12" c="28" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:2:1" value="pp" typref="3029594684">
+<Id typref="3029594684" value="pp" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:2:1">
 <Attr>
-<Pos s="2" l="12" c="26"/>
+<Pos l="12" c="26" s="2"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:2:2" value="SUBJECT" typref="432315463">
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:2:2">
 <Attr>
-<Pos s="7" l="12" c="29"/>
+<Pos l="12" c="29" s="7"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/:">
 <Attr>
-<Pos s="2" l="12" c="42"/>
+<Pos l="12" c="42" s="2"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:3:1" value="pp" typref="3029594684">
+<Id typref="3029594684" value="pp" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:3:1">
 <Attr>
-<Pos s="2" l="12" c="39"/>
+<Pos l="12" c="39" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="432315463">
+<Unary_Exp typref="432315463" op="ran">
 <Attr>
-<Pos s="3" l="12" c="45"/>
+<Pos l="12" c="45" s="3"/>
 </Attr>
-<Binary_Exp op="&lt;|" typref="786576812">
+<Binary_Exp typref="786576812" op="&lt;|">
 <Attr>
-<Pos s="2" l="12" c="54"/>
+<Pos l="12" c="54" s="2"/>
 </Attr>
-<Nary_Exp op="{" typref="432315463">
+<Nary_Exp typref="432315463" op="{">
 <Attr>
-<Pos s="1" l="12" c="49"/>
+<Pos l="12" c="49" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:3:2:1:1:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:3:2:1:1:1">
 <Attr>
-<Pos s="2" l="12" c="50"/>
+<Pos l="12" c="50" s="2"/>
 </Attr>
 </Id>
 </Nary_Exp>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:3:2:1:2" value="preRequirement" typref="786576812">
+<Id typref="786576812" value="preRequirement" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:1:2:1:3:2:1:2">
 <Attr>
-<Pos s="14" l="12" c="57"/>
+<Pos l="12" c="57" s="14"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -491,64 +491,64 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="18" c="15"/>
+<Pos l="18" c="15" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:1:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:1:1">
 <Attr>
-<Pos s="2" l="18" c="13"/>
-</Attr>
-</Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:1:2" value="SUBJECT" typref="432315463">
-<Attr>
-<Pos s="7" l="18" c="16"/>
+<Pos l="18" c="13" s="2"/>
 </Attr>
 </Id>
-</Exp_Comparison>
-<Exp_Comparison op=":">
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:1:2">
 <Attr>
-<Pos s="1" l="18" c="28"/>
-</Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:2:1" value="pp" typref="3029594684">
-<Attr>
-<Pos s="2" l="18" c="26"/>
-</Attr>
-</Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:2:2" value="SUBJECT" typref="432315463">
-<Attr>
-<Pos s="7" l="18" c="29"/>
+<Pos l="18" c="16" s="7"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="18" c="42"/>
+<Pos l="18" c="28" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:3:1" value="pp" typref="3029594684">
+<Id typref="3029594684" value="pp" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:2:1">
 <Attr>
-<Pos s="2" l="18" c="39"/>
+<Pos l="18" c="26" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="432315463">
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:2:2">
 <Attr>
-<Pos s="3" l="18" c="44"/>
+<Pos l="18" c="29" s="7"/>
 </Attr>
-<Binary_Exp op="&lt;|" typref="786576812">
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
 <Attr>
-<Pos s="2" l="18" c="53"/>
+<Pos l="18" c="42" s="1"/>
 </Attr>
-<Nary_Exp op="{" typref="432315463">
+<Id typref="3029594684" value="pp" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:3:1">
 <Attr>
-<Pos s="1" l="18" c="48"/>
+<Pos l="18" c="39" s="2"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:3:2:1:1:1" value="mm" typref="3029594684">
+</Id>
+<Unary_Exp typref="432315463" op="ran">
 <Attr>
-<Pos s="2" l="18" c="49"/>
+<Pos l="18" c="44" s="3"/>
+</Attr>
+<Binary_Exp typref="786576812" op="&lt;|">
+<Attr>
+<Pos l="18" c="53" s="2"/>
+</Attr>
+<Nary_Exp typref="432315463" op="{">
+<Attr>
+<Pos l="18" c="48" s="1"/>
+</Attr>
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:3:2:1:1:1">
+<Attr>
+<Pos l="18" c="49" s="2"/>
 </Attr>
 </Id>
 </Nary_Exp>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:3:2:1:2" value="preRequirement" typref="786576812">
+<Id typref="786576812" value="preRequirement" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:5:2:2:1:3:2:1:2">
 <Attr>
-<Pos s="14" l="18" c="56"/>
+<Pos l="18" c="56" s="14"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -578,70 +578,70 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="13" c="15"/>
+<Pos l="13" c="15" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:1:1" value="aa" typref="3790660461">
+<Id typref="3790660461" value="aa" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:1:1">
 <Attr>
-<Pos s="2" l="13" c="13"/>
+<Pos l="13" c="13" s="2"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:1:2" value="STUDENT" typref="1662888534">
+<Id typref="1662888534" value="STUDENT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:1:2">
 <Attr>
-<Pos s="7" l="13" c="17"/>
+<Pos l="13" c="17" s="7"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="13" c="29"/>
+<Pos l="13" c="29" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:2:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:2:1">
 <Attr>
-<Pos s="2" l="13" c="27"/>
+<Pos l="13" c="27" s="2"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:2:2" value="CAREER" typref="4290625779">
+<Id typref="4290625779" value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:2:2">
 <Attr>
-<Pos s="6" l="13" c="30"/>
+<Pos l="13" c="30" s="6"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/:">
 <Attr>
-<Pos s="2" l="13" c="42"/>
+<Pos l="13" c="42" s="2"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:3:1" value="aa" typref="3790660461">
+<Id typref="3790660461" value="aa" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:3:1">
 <Attr>
-<Pos s="2" l="13" c="39"/>
+<Pos l="13" c="39" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="dom" typref="1662888534">
+<Unary_Exp typref="1662888534" op="dom">
 <Attr>
-<Pos s="3" l="13" c="45"/>
+<Pos l="13" c="45" s="3"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:3:2:1" value="enrolledStudents" typref="3015466747">
+<Id typref="3015466747" value="enrolledStudents" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:3:2:1">
 <Attr>
-<Pos s="16" l="13" c="49"/>
+<Pos l="13" c="49" s="16"/>
 </Attr>
 </Id>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="13" c="71"/>
+<Pos l="13" c="71" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:4:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:4:1">
 <Attr>
-<Pos s="2" l="13" c="69"/>
+<Pos l="13" c="69" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="dom" typref="4290625779">
+<Unary_Exp typref="4290625779" op="dom">
 <Attr>
-<Pos s="3" l="13" c="73"/>
+<Pos l="13" c="73" s="3"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:4:2:1" value="career" typref="1586195109">
+<Id typref="1586195109" value="career" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:1:2:1:4:2:1">
 <Attr>
-<Pos s="6" l="13" c="77"/>
+<Pos l="13" c="77" s="6"/>
 </Attr>
 </Id>
 </Unary_Exp>
@@ -670,84 +670,84 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="17" c="15"/>
+<Pos l="17" c="15" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:1:1" value="aa" typref="3790660461">
+<Id typref="3790660461" value="aa" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:1:1">
 <Attr>
-<Pos s="2" l="17" c="13"/>
-</Attr>
-</Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:1:2" value="STUDENT" typref="1662888534">
-<Attr>
-<Pos s="7" l="17" c="17"/>
+<Pos l="17" c="13" s="2"/>
 </Attr>
 </Id>
-</Exp_Comparison>
-<Exp_Comparison op=":">
+<Id typref="1662888534" value="STUDENT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:1:2">
 <Attr>
-<Pos s="1" l="17" c="29"/>
-</Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:2:1" value="cc" typref="3102896358">
-<Attr>
-<Pos s="2" l="17" c="27"/>
-</Attr>
-</Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:2:2" value="CAREER" typref="4290625779">
-<Attr>
-<Pos s="6" l="17" c="30"/>
+<Pos l="17" c="17" s="7"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="17" c="42"/>
+<Pos l="17" c="29" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:3:1" value="aa" typref="3790660461">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:2:1">
 <Attr>
-<Pos s="2" l="17" c="39"/>
+<Pos l="17" c="27" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="dom" typref="1662888534">
+<Id typref="4290625779" value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:2:2">
 <Attr>
-<Pos s="3" l="17" c="44"/>
+<Pos l="17" c="30" s="6"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:3:2:1" value="enrolledStudents" typref="3015466747">
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
 <Attr>
-<Pos s="16" l="17" c="48"/>
+<Pos l="17" c="42" s="1"/>
+</Attr>
+<Id typref="3790660461" value="aa" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:3:1">
+<Attr>
+<Pos l="17" c="39" s="2"/>
+</Attr>
+</Id>
+<Unary_Exp typref="1662888534" op="dom">
+<Attr>
+<Pos l="17" c="44" s="3"/>
+</Attr>
+<Id typref="3015466747" value="enrolledStudents" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:3:2:1">
+<Attr>
+<Pos l="17" c="48" s="16"/>
 </Attr>
 </Id>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="17" c="70"/>
+<Pos l="17" c="70" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:4:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:4:1">
 <Attr>
-<Pos s="2" l="17" c="68"/>
+<Pos l="17" c="68" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="4290625779">
+<Unary_Exp typref="4290625779" op="ran">
 <Attr>
-<Pos s="3" l="17" c="72"/>
+<Pos l="17" c="72" s="3"/>
 </Attr>
-<Binary_Exp op="&lt;|" typref="3015466747">
+<Binary_Exp typref="3015466747" op="&lt;|">
 <Attr>
-<Pos s="2" l="17" c="81"/>
+<Pos l="17" c="81" s="2"/>
 </Attr>
-<Nary_Exp op="{" typref="1662888534">
+<Nary_Exp typref="1662888534" op="{">
 <Attr>
-<Pos s="1" l="17" c="76"/>
+<Pos l="17" c="76" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:4:2:1:1:1" value="aa" typref="3790660461">
+<Id typref="3790660461" value="aa" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:4:2:1:1:1">
 <Attr>
-<Pos s="2" l="17" c="77"/>
+<Pos l="17" c="77" s="2"/>
 </Attr>
 </Id>
 </Nary_Exp>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:4:2:1:2" value="enrolledStudents" typref="3015466747">
+<Id typref="3015466747" value="enrolledStudents" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:2:2:1:4:2:1:2">
 <Attr>
-<Pos s="16" l="17" c="84"/>
+<Pos l="17" c="84" s="16"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -777,64 +777,64 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="22" c="15"/>
+<Pos l="22" c="15" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:1:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:1:1">
 <Attr>
-<Pos s="2" l="22" c="13"/>
+<Pos l="22" c="13" s="2"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:1:2" value="CAREER" typref="4290625779">
+<Id typref="4290625779" value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:1:2">
 <Attr>
-<Pos s="6" l="22" c="17"/>
+<Pos l="22" c="17" s="6"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="22" c="28"/>
+<Pos l="22" c="28" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:2:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:2:1">
 <Attr>
-<Pos s="2" l="22" c="26"/>
+<Pos l="22" c="26" s="2"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:2:2" value="SUBJECT" typref="432315463">
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:2:2">
 <Attr>
-<Pos s="7" l="22" c="30"/>
+<Pos l="22" c="30" s="7"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/:">
 <Attr>
-<Pos s="2" l="22" c="43"/>
+<Pos l="22" c="43" s="2"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:3:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:3:1">
 <Attr>
-<Pos s="2" l="22" c="40"/>
+<Pos l="22" c="40" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="432315463">
+<Unary_Exp typref="432315463" op="ran">
 <Attr>
-<Pos s="3" l="22" c="46"/>
+<Pos l="22" c="46" s="3"/>
 </Attr>
-<Binary_Exp op="&lt;|" typref="1177173478">
+<Binary_Exp typref="1177173478" op="&lt;|">
 <Attr>
-<Pos s="2" l="22" c="55"/>
+<Pos l="22" c="55" s="2"/>
 </Attr>
-<Nary_Exp op="{" typref="4290625779">
+<Nary_Exp typref="4290625779" op="{">
 <Attr>
-<Pos s="1" l="22" c="50"/>
+<Pos l="22" c="50" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:3:2:1:1:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:3:2:1:1:1">
 <Attr>
-<Pos s="2" l="22" c="51"/>
+<Pos l="22" c="51" s="2"/>
 </Attr>
 </Id>
 </Nary_Exp>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:3:2:1:2" value="optionalSubjects" typref="1177173478">
+<Id typref="1177173478" value="optionalSubjects" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:3:2:1:2">
 <Attr>
-<Pos s="16" l="22" c="58"/>
+<Pos l="22" c="58" s="16"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -842,34 +842,34 @@
 </Exp_Comparison>
 <Exp_Comparison op="/:">
 <Attr>
-<Pos s="2" l="22" c="81"/>
+<Pos l="22" c="81" s="2"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:4:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:4:1">
 <Attr>
-<Pos s="2" l="22" c="78"/>
+<Pos l="22" c="78" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="432315463">
+<Unary_Exp typref="432315463" op="ran">
 <Attr>
-<Pos s="3" l="22" c="84"/>
+<Pos l="22" c="84" s="3"/>
 </Attr>
-<Binary_Exp op="&lt;|" typref="1177173478">
+<Binary_Exp typref="1177173478" op="&lt;|">
 <Attr>
-<Pos s="2" l="22" c="93"/>
+<Pos l="22" c="93" s="2"/>
 </Attr>
-<Nary_Exp op="{" typref="4290625779">
+<Nary_Exp typref="4290625779" op="{">
 <Attr>
-<Pos s="1" l="22" c="88"/>
+<Pos l="22" c="88" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:4:2:1:1:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:4:2:1:1:1">
 <Attr>
-<Pos s="2" l="22" c="89"/>
+<Pos l="22" c="89" s="2"/>
 </Attr>
 </Id>
 </Nary_Exp>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:4:2:1:2" value="requiredSubjects" typref="1177173478">
+<Id typref="1177173478" value="requiredSubjects" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:4:2:1:2">
 <Attr>
-<Pos s="16" l="22" c="96"/>
+<Pos l="22" c="96" s="16"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -877,20 +877,20 @@
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="22" c="118"/>
+<Pos l="22" c="118" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:5:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:5:1">
 <Attr>
-<Pos s="2" l="22" c="116"/>
+<Pos l="22" c="116" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="dom" typref="4290625779">
+<Unary_Exp typref="4290625779" op="dom">
 <Attr>
-<Pos s="3" l="22" c="119"/>
+<Pos l="22" c="119" s="3"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:5:2:1" value="career" typref="1586195109">
+<Id typref="1586195109" value="career" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:3:2:1:5:2:1">
 <Attr>
-<Pos s="6" l="22" c="123"/>
+<Pos l="22" c="123" s="6"/>
 </Attr>
 </Id>
 </Unary_Exp>
@@ -919,64 +919,64 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="26" c="15"/>
+<Pos l="26" c="15" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:1:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:1:1">
 <Attr>
-<Pos s="2" l="26" c="13"/>
-</Attr>
-</Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:1:2" value="CAREER" typref="4290625779">
-<Attr>
-<Pos s="6" l="26" c="17"/>
+<Pos l="26" c="13" s="2"/>
 </Attr>
 </Id>
-</Exp_Comparison>
-<Exp_Comparison op=":">
+<Id typref="4290625779" value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:1:2">
 <Attr>
-<Pos s="1" l="26" c="28"/>
-</Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:2:1" value="mm" typref="3029594684">
-<Attr>
-<Pos s="2" l="26" c="26"/>
-</Attr>
-</Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:2:2" value="SUBJECT" typref="432315463">
-<Attr>
-<Pos s="7" l="26" c="30"/>
+<Pos l="26" c="17" s="6"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="26" c="43"/>
+<Pos l="26" c="28" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:3:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:2:1">
 <Attr>
-<Pos s="2" l="26" c="40"/>
+<Pos l="26" c="26" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="432315463">
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:2:2">
 <Attr>
-<Pos s="3" l="26" c="45"/>
+<Pos l="26" c="30" s="7"/>
 </Attr>
-<Binary_Exp op="&lt;|" typref="1177173478">
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
 <Attr>
-<Pos s="2" l="26" c="54"/>
+<Pos l="26" c="43" s="1"/>
 </Attr>
-<Nary_Exp op="{" typref="4290625779">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:3:1">
 <Attr>
-<Pos s="1" l="26" c="49"/>
+<Pos l="26" c="40" s="2"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:3:2:1:1:1" value="cc" typref="3102896358">
+</Id>
+<Unary_Exp typref="432315463" op="ran">
 <Attr>
-<Pos s="2" l="26" c="50"/>
+<Pos l="26" c="45" s="3"/>
+</Attr>
+<Binary_Exp typref="1177173478" op="&lt;|">
+<Attr>
+<Pos l="26" c="54" s="2"/>
+</Attr>
+<Nary_Exp typref="4290625779" op="{">
+<Attr>
+<Pos l="26" c="49" s="1"/>
+</Attr>
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:3:2:1:1:1">
+<Attr>
+<Pos l="26" c="50" s="2"/>
 </Attr>
 </Id>
 </Nary_Exp>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:3:2:1:2" value="requiredSubjects" typref="1177173478">
+<Id typref="1177173478" value="requiredSubjects" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:4:2:1:3:2:1:2">
 <Attr>
-<Pos s="16" l="26" c="57"/>
+<Pos l="26" c="57" s="16"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1006,64 +1006,64 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="30" c="15"/>
+<Pos l="30" c="15" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:1:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:1:1">
 <Attr>
-<Pos s="2" l="30" c="13"/>
+<Pos l="30" c="13" s="2"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:1:2" value="CAREER" typref="4290625779">
+<Id typref="4290625779" value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:1:2">
 <Attr>
-<Pos s="6" l="30" c="17"/>
+<Pos l="30" c="17" s="6"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="30" c="28"/>
+<Pos l="30" c="28" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:2:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:2:1">
 <Attr>
-<Pos s="2" l="30" c="26"/>
+<Pos l="30" c="26" s="2"/>
 </Attr>
 </Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:2:2" value="SUBJECT" typref="432315463">
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:2:2">
 <Attr>
-<Pos s="7" l="30" c="30"/>
+<Pos l="30" c="30" s="7"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/:">
 <Attr>
-<Pos s="2" l="30" c="43"/>
+<Pos l="30" c="43" s="2"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:3:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:3:1">
 <Attr>
-<Pos s="2" l="30" c="40"/>
+<Pos l="30" c="40" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="432315463">
+<Unary_Exp typref="432315463" op="ran">
 <Attr>
-<Pos s="3" l="30" c="46"/>
+<Pos l="30" c="46" s="3"/>
 </Attr>
-<Binary_Exp op="&lt;|" typref="1177173478">
+<Binary_Exp typref="1177173478" op="&lt;|">
 <Attr>
-<Pos s="2" l="30" c="55"/>
+<Pos l="30" c="55" s="2"/>
 </Attr>
-<Nary_Exp op="{" typref="4290625779">
+<Nary_Exp typref="4290625779" op="{">
 <Attr>
-<Pos s="1" l="30" c="50"/>
+<Pos l="30" c="50" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:3:2:1:1:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:3:2:1:1:1">
 <Attr>
-<Pos s="2" l="30" c="51"/>
+<Pos l="30" c="51" s="2"/>
 </Attr>
 </Id>
 </Nary_Exp>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:3:2:1:2" value="requiredSubjects" typref="1177173478">
+<Id typref="1177173478" value="requiredSubjects" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:3:2:1:2">
 <Attr>
-<Pos s="16" l="30" c="58"/>
+<Pos l="30" c="58" s="16"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1071,34 +1071,34 @@
 </Exp_Comparison>
 <Exp_Comparison op="/:">
 <Attr>
-<Pos s="2" l="30" c="81"/>
+<Pos l="30" c="81" s="2"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:4:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:4:1">
 <Attr>
-<Pos s="2" l="30" c="78"/>
+<Pos l="30" c="78" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="432315463">
+<Unary_Exp typref="432315463" op="ran">
 <Attr>
-<Pos s="3" l="30" c="84"/>
+<Pos l="30" c="84" s="3"/>
 </Attr>
-<Binary_Exp op="&lt;|" typref="1177173478">
+<Binary_Exp typref="1177173478" op="&lt;|">
 <Attr>
-<Pos s="2" l="30" c="93"/>
+<Pos l="30" c="93" s="2"/>
 </Attr>
-<Nary_Exp op="{" typref="4290625779">
+<Nary_Exp typref="4290625779" op="{">
 <Attr>
-<Pos s="1" l="30" c="88"/>
+<Pos l="30" c="88" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:4:2:1:1:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:4:2:1:1:1">
 <Attr>
-<Pos s="2" l="30" c="89"/>
+<Pos l="30" c="89" s="2"/>
 </Attr>
 </Id>
 </Nary_Exp>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:4:2:1:2" value="optionalSubjects" typref="1177173478">
+<Id typref="1177173478" value="optionalSubjects" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:4:2:1:2">
 <Attr>
-<Pos s="16" l="30" c="96"/>
+<Pos l="30" c="96" s="16"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1106,20 +1106,20 @@
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="30" c="118"/>
+<Pos l="30" c="118" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:5:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:5:1">
 <Attr>
-<Pos s="2" l="30" c="116"/>
+<Pos l="30" c="116" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="dom" typref="4290625779">
+<Unary_Exp typref="4290625779" op="dom">
 <Attr>
-<Pos s="3" l="30" c="119"/>
+<Pos l="30" c="119" s="3"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:5:2:1" value="career" typref="1586195109">
+<Id typref="1586195109" value="career" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:5:2:1:5:2:1">
 <Attr>
-<Pos s="6" l="30" c="123"/>
+<Pos l="30" c="123" s="6"/>
 </Attr>
 </Id>
 </Unary_Exp>
@@ -1148,64 +1148,64 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="34" c="15"/>
+<Pos l="34" c="15" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:1:1" value="cc" typref="3102896358">
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:1:1">
 <Attr>
-<Pos s="2" l="34" c="13"/>
-</Attr>
-</Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:1:2" value="CAREER" typref="4290625779">
-<Attr>
-<Pos s="6" l="34" c="17"/>
+<Pos l="34" c="13" s="2"/>
 </Attr>
 </Id>
-</Exp_Comparison>
-<Exp_Comparison op=":">
+<Id typref="4290625779" value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:1:2">
 <Attr>
-<Pos s="1" l="34" c="28"/>
-</Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:2:1" value="mm" typref="3029594684">
-<Attr>
-<Pos s="2" l="34" c="26"/>
-</Attr>
-</Id>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:2:2" value="SUBJECT" typref="432315463">
-<Attr>
-<Pos s="7" l="34" c="30"/>
+<Pos l="34" c="17" s="6"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="34" c="43"/>
+<Pos l="34" c="28" s="1"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:3:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:2:1">
 <Attr>
-<Pos s="2" l="34" c="40"/>
+<Pos l="34" c="26" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="432315463">
+<Id typref="432315463" value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:2:2">
 <Attr>
-<Pos s="3" l="34" c="45"/>
+<Pos l="34" c="30" s="7"/>
 </Attr>
-<Binary_Exp op="&lt;|" typref="1177173478">
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
 <Attr>
-<Pos s="2" l="34" c="54"/>
+<Pos l="34" c="43" s="1"/>
 </Attr>
-<Nary_Exp op="{" typref="4290625779">
+<Id typref="3029594684" value="mm" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:3:1">
 <Attr>
-<Pos s="1" l="34" c="49"/>
+<Pos l="34" c="40" s="2"/>
 </Attr>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:3:2:1:1:1" value="cc" typref="3102896358">
+</Id>
+<Unary_Exp typref="432315463" op="ran">
 <Attr>
-<Pos s="2" l="34" c="50"/>
+<Pos l="34" c="45" s="3"/>
+</Attr>
+<Binary_Exp typref="1177173478" op="&lt;|">
+<Attr>
+<Pos l="34" c="54" s="2"/>
+</Attr>
+<Nary_Exp typref="4290625779" op="{">
+<Attr>
+<Pos l="34" c="49" s="1"/>
+</Attr>
+<Id typref="3102896358" value="cc" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:3:2:1:1:1">
+<Attr>
+<Pos l="34" c="50" s="2"/>
 </Attr>
 </Id>
 </Nary_Exp>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:3:2:1:2" value="optionalSubjects" typref="1177173478">
+<Id typref="1177173478" value="optionalSubjects" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:5:6:2:1:3:2:1:2">
 <Attr>
-<Pos s="16" l="34" c="57"/>
+<Pos l="34" c="57" s="16"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1263,16 +1263,16 @@
 <Local_Hyp num="1">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="12" c="29"/>
+<Pos l="12" c="29" s="1"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:1" value="mm" typref="3029594684">
+<Id typref="3029594684" value="mm" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:1">
 <Attr>
-<Pos s="2" l="12" c="27"/>
+<Pos l="12" c="27" s="2"/>
 </Attr>
 </Id>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:2" value="SUBJECT" typref="432315463">
+<Id typref="432315463" value="SUBJECT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:2">
 <Attr>
-<Pos s="7" l="12" c="30"/>
+<Pos l="12" c="30" s="7"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1280,16 +1280,16 @@
 <Local_Hyp num="2">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="12" c="15"/>
+<Pos l="12" c="15" s="1"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:1" value="aa" typref="3790660461">
+<Id typref="3790660461" value="aa" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:1">
 <Attr>
-<Pos s="2" l="12" c="13"/>
+<Pos l="12" c="13" s="2"/>
 </Attr>
 </Id>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:2" value="STUDENT" typref="1662888534">
+<Id typref="1662888534" value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:2">
 <Attr>
-<Pos s="7" l="12" c="17"/>
+<Pos l="12" c="17" s="7"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1312,50 +1312,50 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="12" c="15"/>
+<Pos l="12" c="15" s="1"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:1" value="aa" typref="3790660461">
+<Id typref="3790660461" value="aa" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:1">
 <Attr>
-<Pos s="2" l="12" c="13"/>
-</Attr>
-</Id>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:2" value="STUDENT" typref="1662888534">
-<Attr>
-<Pos s="7" l="12" c="17"/>
+<Pos l="12" c="13" s="2"/>
 </Attr>
 </Id>
-</Exp_Comparison>
-<Exp_Comparison op=":">
+<Id typref="1662888534" value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:1:2">
 <Attr>
-<Pos s="1" l="12" c="29"/>
-</Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:1" value="mm" typref="3029594684">
-<Attr>
-<Pos s="2" l="12" c="27"/>
-</Attr>
-</Id>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:2" value="SUBJECT" typref="432315463">
-<Attr>
-<Pos s="7" l="12" c="30"/>
+<Pos l="12" c="17" s="7"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="12" c="42"/>
+<Pos l="12" c="29" s="1"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:3:1" value="aa" typref="3790660461">
+<Id typref="3029594684" value="mm" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:1">
 <Attr>
-<Pos s="2" l="12" c="40"/>
+<Pos l="12" c="27" s="2"/>
 </Attr>
 </Id>
-<Unary_Exp op="dom" typref="1662888534">
+<Id typref="432315463" value="SUBJECT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:2:2">
 <Attr>
-<Pos s="3" l="12" c="44"/>
+<Pos l="12" c="30" s="7"/>
 </Attr>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:3:2:1" value="enrolledStudents" typref="3015466747">
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
 <Attr>
-<Pos s="16" l="12" c="48"/>
+<Pos l="12" c="42" s="1"/>
+</Attr>
+<Id typref="3790660461" value="aa" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:3:1">
+<Attr>
+<Pos l="12" c="40" s="2"/>
+</Attr>
+</Id>
+<Unary_Exp typref="1662888534" op="dom">
+<Attr>
+<Pos l="12" c="44" s="3"/>
+</Attr>
+<Id typref="3015466747" value="enrolledStudents" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:5:1:2:1:3:2:1">
+<Attr>
+<Pos l="12" c="48" s="16"/>
 </Attr>
 </Id>
 </Unary_Exp>
@@ -1367,8 +1367,8 @@
 <Type id="683629755">
 <Unary_Exp op="POW">
 <Binary_Exp op="*">
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:1:1:1:1" value="STUDENT"/>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:1:1:1:2" value="SUBJECT"/>
+<Id value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:1:1:1:1"/>
+<Id value="SUBJECT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:1:1:1:2"/>
 </Binary_Exp>
 </Unary_Exp>
 </Type>
@@ -1376,20 +1376,20 @@
 <Unary_Exp op="POW">
 <Unary_Exp op="POW">
 <Binary_Exp op="*">
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:2:1:1:1:1" value="STUDENT"/>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:2:1:1:1:2" value="SUBJECT"/>
+<Id value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:2:1:1:1:1"/>
+<Id value="SUBJECT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:2:1:1:1:2"/>
 </Binary_Exp>
 </Unary_Exp>
 </Unary_Exp>
 </Type>
 <Type id="1662888534">
 <Unary_Exp op="POW">
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:3:1:1" value="STUDENT"/>
+<Id value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:3:1:1"/>
 </Unary_Exp>
 </Type>
 <Type id="432315463">
 <Unary_Exp op="POW">
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:4:1:1" value="SUBJECT"/>
+<Id value="SUBJECT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:4:1:1"/>
 </Unary_Exp>
 </Type>
 <Type id="3817003670">
@@ -1398,35 +1398,35 @@
 </Unary_Exp>
 </Type>
 <Type id="3790660461">
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:6:1" value="STUDENT"/>
+<Id value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:6:1"/>
 </Type>
 <Type id="3029594684">
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:7:1" value="SUBJECT"/>
+<Id value="SUBJECT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:7:1"/>
 </Type>
 <Type id="3015466747">
 <Unary_Exp op="POW">
 <Binary_Exp op="*">
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:8:1:1:1" value="STUDENT"/>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:8:1:1:2" value="CAREER"/>
+<Id value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:8:1:1:1"/>
+<Id value="CAREER" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:8:1:1:2"/>
 </Binary_Exp>
 </Unary_Exp>
 </Type>
 <Type id="1849840328">
 <Binary_Exp op="*">
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:9:1:1" value="STUDENT"/>
-<Id tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:9:1:2" value="SUBJECT"/>
+<Id value="STUDENT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:9:1:1"/>
+<Id value="SUBJECT" tag="D:\B projects\SchoolManagement\bdp\StudentMch.bxml:1:6:9:1:2"/>
 </Binary_Exp>
 </Type>
 <Type id="432315463">
 <Unary_Exp op="POW">
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:1:1:1" value="SUBJECT"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:1:1:1"/>
 </Unary_Exp>
 </Type>
 <Type id="786576812">
 <Unary_Exp op="POW">
 <Binary_Exp op="*">
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:2:1:1:1" value="SUBJECT"/>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:2:1:1:2" value="SUBJECT"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:2:1:1:1"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:2:1:1:2"/>
 </Binary_Exp>
 </Unary_Exp>
 </Type>
@@ -1434,8 +1434,8 @@
 <Unary_Exp op="POW">
 <Unary_Exp op="POW">
 <Binary_Exp op="*">
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:3:1:1:1:1" value="SUBJECT"/>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:3:1:1:1:2" value="SUBJECT"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:3:1:1:1:1"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:3:1:1:1:2"/>
 </Binary_Exp>
 </Unary_Exp>
 </Unary_Exp>
@@ -1446,32 +1446,32 @@
 </Unary_Exp>
 </Type>
 <Type id="3029594684">
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:5:1" value="SUBJECT"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:5:1"/>
 </Type>
 <Type id="1844099735">
 <Binary_Exp op="*">
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:6:1:1" value="SUBJECT"/>
-<Id tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:6:1:2" value="SUBJECT"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:6:1:1"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\SubjectMch.bxml:1:6:6:1:2"/>
 </Binary_Exp>
 </Type>
 <Type id="1662888534">
 <Unary_Exp op="POW">
-<Id tag="D:/B projects/SchoolManagement/bdp\Student_ctx.bxml:1:3:1:1:1" value="STUDENT"/>
+<Id value="STUDENT" tag="D:/B projects/SchoolManagement/bdp\Student_ctx.bxml:1:3:1:1:1"/>
 </Unary_Exp>
 </Type>
 <Type id="1177173478">
 <Unary_Exp op="POW">
 <Binary_Exp op="*">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:1:1:1:1" value="CAREER"/>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:1:1:1:2" value="SUBJECT"/>
+<Id value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:1:1:1:1"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:1:1:1:2"/>
 </Binary_Exp>
 </Unary_Exp>
 </Type>
 <Type id="3015466747">
 <Unary_Exp op="POW">
 <Binary_Exp op="*">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:2:1:1:1" value="STUDENT"/>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:2:1:1:2" value="CAREER"/>
+<Id value="STUDENT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:2:1:1:1"/>
+<Id value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:2:1:1:2"/>
 </Binary_Exp>
 </Unary_Exp>
 </Type>
@@ -1479,20 +1479,20 @@
 <Unary_Exp op="POW">
 <Unary_Exp op="POW">
 <Binary_Exp op="*">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:3:1:1:1:1" value="CAREER"/>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:3:1:1:1:2" value="SUBJECT"/>
+<Id value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:3:1:1:1:1"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:3:1:1:1:2"/>
 </Binary_Exp>
 </Unary_Exp>
 </Unary_Exp>
 </Type>
 <Type id="4290625779">
 <Unary_Exp op="POW">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:4:1:1" value="CAREER"/>
+<Id value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:4:1:1"/>
 </Unary_Exp>
 </Type>
 <Type id="432315463">
 <Unary_Exp op="POW">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:5:1:1" value="SUBJECT"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:5:1:1"/>
 </Unary_Exp>
 </Type>
 <Type id="3817003670">
@@ -1504,44 +1504,44 @@
 <Unary_Exp op="POW">
 <Unary_Exp op="POW">
 <Binary_Exp op="*">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:7:1:1:1:1" value="STUDENT"/>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:7:1:1:1:2" value="CAREER"/>
+<Id value="STUDENT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:7:1:1:1:1"/>
+<Id value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:7:1:1:1:2"/>
 </Binary_Exp>
 </Unary_Exp>
 </Unary_Exp>
 </Type>
 <Type id="1662888534">
 <Unary_Exp op="POW">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:8:1:1" value="STUDENT"/>
+<Id value="STUDENT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:8:1:1"/>
 </Unary_Exp>
 </Type>
 <Type id="3102896358">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:9:1" value="CAREER"/>
+<Id value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:9:1"/>
 </Type>
 <Type id="3790660461">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:10:1" value="STUDENT"/>
+<Id value="STUDENT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:10:1"/>
 </Type>
 <Type id="1586195109">
 <Unary_Exp op="POW">
 <Binary_Exp op="*">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:11:1:1:1" value="CAREER"/>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:11:1:1:2" value="DEPARTAMENT"/>
+<Id value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:11:1:1:1"/>
+<Id value="DEPARTAMENT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:11:1:1:2"/>
 </Binary_Exp>
 </Unary_Exp>
 </Type>
 <Type id="3496206046">
 <Binary_Exp op="*">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:12:1:1" value="STUDENT"/>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:12:1:2" value="CAREER"/>
+<Id value="STUDENT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:12:1:1"/>
+<Id value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:12:1:2"/>
 </Binary_Exp>
 </Type>
 <Type id="3029594684">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:13:1" value="SUBJECT"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:13:1"/>
 </Type>
 <Type id="1810232371">
 <Binary_Exp op="*">
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:14:1:1" value="CAREER"/>
-<Id tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:14:1:2" value="SUBJECT"/>
+<Id value="CAREER" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:14:1:1"/>
+<Id value="SUBJECT" tag="D:/B projects/SchoolManagement/bdp\CareerMch.bxml:1:6:14:1:2"/>
 </Binary_Exp>
 </Type>
 </TypeInfos>

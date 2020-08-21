@@ -50,7 +50,7 @@ SUBJECT: FIN(INTEGER) & not(SUBJECT = {}) & STUDENT: FIN(INTEGER) & not(STUDENT 
 ((dd) : (DEPARTAMENT)) & ((cc) : (CAREER)) & not(cc : dom(career));
 ((dd) : (DEPARTAMENT)) & ((cc) : (CAREER)) & ((cc) : (dom(career))) & ((dd) : (ran(((({cc})) <| (career)))));
 ((pp) : (PROFESSOR)) & ((cc) : (CAREER)) & ((pp) : (dom(members))) & not(pp : dom(coordination)) & ((ran(((({cc})) <| (career)))) = (ran(((({pp})) <| (members))))) & (card(dom(coordination)) +1 <= 2);
-((cc) : (CAREER)) & ((pp) : (PROFESSOR)) & ((cc) : (dom(career))) & ((pp) : (dom(members))) & (0 +1 <= card(dom(coordination)));
+((cc) : (CAREER)) & ((pp) : (PROFESSOR)) & ((cc) : (dom(career))) & ((pp) : (dom(members))) & (0 +1 <= card(dom(coordination))) & (card(dom(coordination)) <= 2);
 btrue;
 ((((requiredSubjects) /\ (optionalSubjects))) = ({}));
 ((optionalSubjects) : (((CAREER) <-> (SUBJECT))));
